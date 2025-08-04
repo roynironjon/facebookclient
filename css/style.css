@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+
+
+/* CSS Variables for Typography */
+/* These variables define the typography styles used throughout the document */
+:root {
+  /* Primary Text */
+  --primary-text-font: 'Space Grotesk', sans-serif;
+  --secondary-text-font: 'Urbanist', sans-serif;
+  --primary-text-weight: 700;
+  --primary-text-size: 64px;
+  --primary-text-line-height: 96px;
+  --primary-text-letter-spacing: -0.05em;
+  --primary-text-transform: uppercase;
+
+  /* Secondary Text */
+  --secondary-text-font: 'Space Grotesk', sans-serif;
+  --secondary-text-weight: 700;
+  --secondary-text-size: 36px;
+  --secondary-text-line-height: 54px;
+  --secondary-text-letter-spacing: -0.02em;
+  --secondary-text-transform: uppercase;
+
+  /* Sub Heading */
+  --sub-heading-font: 'Space Grotesk', sans-serif;
+  --sub-heading-weight: 700;
+  --sub-heading-size: 42px;
+  --sub-heading-line-height: 54px;
+  --sub-heading-letter-spacing: -0.02em;
+  --sub-heading-transform: uppercase;
+
+  /* Inner Heading */
+  --inner-heading-font: 'Space Grotesk', sans-serif;
+  --inner-heading-weight: 700;
+  --inner-heading-size: 36px;
+  --inner-heading-line-height: 54px;
+  --inner-heading-letter-spacing: -0.02em;
+  --inner-heading-transform: uppercase;
+
+  /* Regular Text */
+  --text-font: 'Space Grotesk', sans-serif;
+  --text-weight: 400;
+  --text-size: 20px;
+  --text-line-height: 28px;
+  --text-letter-spacing: -0.02em;
+
+  /* Bold Text - 28px */
+  --text-28-font: 'Space Grotesk', sans-serif;
+  --text-28-weight: 700;
+  --text-28-size: 28px;
+  --text-28-line-height: 36px;
+  --text-28-letter-spacing: -0.02em;
+}
+
+/* CSS Variables for Colors */
+/* These variables define the color palette used throughout the document */
+:root {
+  --primary-color: rgba(44, 59, 35, 1);
+  --secondary-color: rgba(43, 43, 43, 0.27); 
+
+  /* Basic Colors */
+  --black-color: rgba(6, 8, 5, 1);
+  --white-color: rgba(244, 242, 255, 1);
+}
+
+
+/* Primary Heading */
+/* This class is used for the main headings in the document */
+.primary-heading {
+  font-family: var(--primary-text-font);
+  font-weight: var(--primary-text-weight);
+  font-size: var(--primary-text-size);
+  line-height: var(--primary-text-line-height);
+  letter-spacing: var(--primary-text-letter-spacing);
+  text-transform: var(--primary-text-transform);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header css code here */
+.main-header{
+    background-color: var(--primary-color);
+    padding: 32px 80px;
+}
+.main-header .main-column{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header .main-column .menu ul{
+    display: flex;
+    list-style: none;
+    column-gap: 48px;
+}
+.main-header .main-column .menu ul li{
+    font-family: var(--secondary-text-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+.main-header .main-column .menu ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s ease-in-out;
+}
+.main-header .main-column .button-column .contact-button {
+    display: flex;
+    column-gap: 10px;
+    padding: 14px 24px;
+    font-family: var(--secondary-text-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid transparent;
+    background-image: 
+    linear-gradient(#2C3B23, #2C3B23), linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+}
+/* header css code end */
+
+
+
+
+
+
+
+/* footer css code start */
+.main-footer{
+    background-color: #060805;
+    padding: 60px 80px;
+}
+.main-footer .main-column{
+    max-width: 1280px;
+    margin:  0 auto;
+}
