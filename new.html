@@ -1,310 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Footer Design</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      :root {
+        --background-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --light-gray-text: #b0b0b0;
+        --accent-color: #22c55e;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        margin: 0;
+      }
+
+      .lumos-section {
+        padding: 80px 62px;
+        background-color:#212121;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 91px;
+      }
+      .lumos-section .left-content {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .main-heading {
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: bold;
+        color: var(--text-color);
+        margin: 0;
+        text-transform: uppercase;
+      }
+      .lumos-section .right-content {
+        flex: 1.5;
+        min-width: 400px;
+      }
+
+      .stats-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .stats-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .arrow-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .arrow-icon {
+        width: 24px;
+        height: 24px;
+        fill: var(--accent-color);
+        transform: rotate(90deg); /* Adjust arrow rotation if needed */
+      }
+
+      .stat-content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--text-color);
+        line-height: 1;
+      }
+
+      .label {
+        font-size: 1rem;
+        color: var(--light-gray-text);
+        margin-top: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .content-wrapper {
+          flex-direction: column;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #f5f5f5;
-            padding: 50px 0;
+        .left-content,
+        .right-content {
+          min-width: unset;
         }
 
-        .footer {
-            background-color: #1a1a1a;
-            color: #ffffff;
-            padding: 60px 0 30px 0;
+        .main-heading {
+          font-size: 2.5rem;
         }
 
-        .footer-container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .stats-wrapper {
+          flex-direction: column;
+          align-items: flex-start;
         }
 
-        .footer-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 60px;
-            margin-bottom: 50px;
+        .stats-item {
+          width: 100%;
         }
-
-        .footer-brand {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .brand-logo {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .brand-icon {
-            width: 24px;
-            height: 24px;
-            background-color: #4ade80;
-            border-radius: 50%;
-            margin-right: 12px;
-            position: relative;
-        }
-
-        .brand-icon::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 8px;
-            height: 8px;
-            background-color: #1a1a1a;
-            border-radius: 50%;
-        }
-
-        .brand-name {
-            font-size: 18px;
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        .brand-description {
-            color: #a3a3a3;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-
-        .footer-section h3 {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 25px;
-            color: #ffffff;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 12px;
-        }
-
-        .footer-section ul li a {
-            color: #a3a3a3;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section ul li a:hover {
-            color: #4ade80;
-        }
-
-        .newsletter-section {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .newsletter-form {
-            display: flex;
-            margin-top: 15px;
-        }
-
-        .newsletter-input {
-            flex: 1;
-            padding: 12px 16px;
-            border: 1px solid #404040;
-            background-color: #2a2a2a;
-            color: #ffffff;
-            border-radius: 6px 0 0 6px;
-            font-size: 14px;
-            outline: none;
-        }
-
-        .newsletter-input::placeholder {
-            color: #a3a3a3;
-        }
-
-        .newsletter-button {
-            padding: 12px 24px;
-            background-color: #4ade80;
-            color: #1a1a1a;
-            border: none;
-            border-radius: 0 6px 6px 0;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .newsletter-button:hover {
-            background-color: #22c55e;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #404040;
-            padding-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .copyright {
-            color: #a3a3a3;
-            font-size: 14px;
-        }
-
-        .footer-bottom-right {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .contact-info {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: #a3a3a3;
-            font-size: 14px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 12px;
-        }
-
-        .social-link {
-            width: 36px;
-            height: 36px;
-            background-color: #4ade80;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: #1a1a1a;
-            font-weight: 600;
-            font-size: 14px;
-            transition: background-color 0.3s ease;
-        }
-
-        .social-link:hover {
-            background-color: #22c55e;
-        }
-
-        @media (max-width: 768px) {
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
-
-            .footer-bottom-right {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                gap: 15px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <!-- Brand Section -->
-                <div class="footer-brand">
-                    <div class="brand-logo">
-                        <div class="brand-icon"></div>
-                        <span class="brand-name">Name</span>
-                    </div>
-                    <p class="brand-description">
-                        Brand your workflow and enhance team collaboration of mastery and joyful.
-                    </p>
+  </head>
+  <body>
+    <section class="creative-service">
+        <div class="creative-service-header">
+            <h1>KEEPING TRACK OF OUR CREATIVE SERVICE</h1>
+            <p>At OptimizedByAlex, we prioritize responsiveness to ensure your website adapts seamlessly across all devices.At OptimizedByAlex, we prioritize responsiveness</p>
+        </div>
+        <div class="service-cards-container">
+            <div class="service-card">
+                <div class="service-card-image">
+                    <img src="https://via.placeholder.com/600x350" alt="Code on screen" />
                 </div>
-
-                <!-- Services Section -->
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#">Search Engine Optimization</a></li>
-                        <li><a href="#">Pay Per Click</a></li>
-                        <li><a href="#">Website Maintenance & Updates</a></li>
-                        <li><a href="#">On-Site Optimization</a></li>
-                        <li><a href="#">Off-Site Optimization</a></li>
-                        <li><a href="#">Link Building Service</a></li>
-                        <li><a href="#">Content Creation</a></li>
-                    </ul>
-                </div>
-
-                <!-- Site Links Section -->
-                <div class="footer-section">
-                    <h3>Site Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-
-                <!-- Newsletter Section -->
-                <div class="footer-section newsletter-section">
-                    <h3>Subscribe To Our Newsletter</h3>
-                    <div class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="Enter your email here">
-                        <button type="submit" class="newsletter-button">Subscribe</button>
-                    </div>
+                <div class="service-card-content">
+                    <h2>WORDPRESS DEVELOPER</h2>
+                    <p>Ready to set your brand apart in the digital realm? OptimizedByAlex, your Vancouver, WA-based partner, specializes in crafting bespoke website designs and SEO strategies. Our tailored approach ensures your online presence reflects your brand identity while captivating your audience.</p>
+                    <p>Let's embark on this digital journey together!At OptimizedByAlex, exceeding your expectations is our standard. Complete the form on the right, tailored to your brand's needs. Share insights about your project, and we'll create a personalized quote that aligns perfectly with your vision. Elevate your brand's online impact starting today.</p>
                 </div>
             </div>
-
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <p>Copyright by</p>
-                    <p>© 2025 Brand. All rights Brand</p>
+            <div class="service-card">
+                <div class="service-card-image">
+                    <img src="https://via.placeholder.com/600x350" alt="Video editing timeline" />
                 </div>
-                
-                <div class="footer-bottom-right">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <span>📞</span>
-                            <span>300-818-4441</span>
-                        </div>
-                        <div class="contact-item">
-                            <span>✉️</span>
-                            <span>info@northeaststyles</span>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link">f</a>
-                        <a href="#" class="social-link">📷</a>
-                        <a href="#" class="social-link">@</a>
-                    </div>
+                <div class="service-card-content">
+                    <h2>SEO</h2>
+                    <p>Ready to set your brand apart in the digital realm? OptimizedByAlex, your Vancouver, WA-based partner, specializes in crafting bespoke website designs and SEO strategies. Our tailored approach ensures your online presence reflects your brand identity while captivating your audience.</p>
+                    <p>Let's embark on this digital journey together!At OptimizedByAlex, exceeding your expectations is our standard. Complete the form on the right, tailored to your brand's needs. Share insights about your project, and we'll create a personalized quote that aligns perfectly with your vision. Elevate your brand's online impact starting today.</p>
+                </div>
+            </div>
+            <div class="service-card full-width">
+                <div class="service-card-content">
+                    <h2>PPC</h2>
+                    <p>Ready to set your brand apart in the digital realm? OptimizedByAlex, your Vancouver, WA-based partner, specializes in crafting bespoke website designs and SEO strategies. Our tailored approach ensures your online presence reflects your brand identity while captivating your audience.</p>
+                    <p>Let's embark on this digital journey together!At OptimizedByAlex, exceeding your expectations is our standard. Complete the form on the right, tailored to your brand's needs. Share insights about your project, and we'll create a personalized quote that aligns perfectly with your vision. Elevate your brand's online impact starting today.</p>
+                </div>
+                <div class="service-card-image">
+                    <img src="https://via.placeholder.com/600x350" alt="Hand holding a phone with data icons" />
                 </div>
             </div>
         </div>
-    </footer>
-</body>
+    </section>
+
+<style>
+    :root {
+        --dark-grey: #1c1c1c;
+        --light-grey: #f0f0f0;
+        --white: #ffffff;
+        --text-color: #e0e0e0;
+        --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .creative-service {
+        font-family: var(--font-family-sans);
+        background-color: var(--dark-grey);
+        color: var(--text-color);
+        padding: 50px 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .creative-service-header {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 50px;
+        gap: 30px;
+    }
+
+    .creative-service-header h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--white);
+        margin: 0;
+        line-height: 1.2;
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .creative-service-header p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #b0b0b0;
+        margin: 0;
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .service-cards-container {
+        width: 100%;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        background-color: var(--dark-grey);
+        border: 1px solid #333;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card.full-width {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-card-image {
+        width: 100%;
+        height: 250px;
+        background-color: #000;
+        overflow: hidden;
+    }
+
+    .service-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .service-card-content {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card.full-width .service-card-content {
+        padding: 30px 40px;
+    }
+
+    .service-card h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--white);
+        margin: 0;
+    }
+
+    .service-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #b0b0b0;
+        margin: 0;
+    }
+
+    @media (max-width: 1024px) {
+        .creative-service-header {
+            flex-direction: column;
+        }
+
+        .creative-service-header h1,
+        .creative-service-header p {
+            max-width: 100%;
+        }
+        
+        .creative-service-header h1 {
+            font-size: 2.5rem;
+        }
+
+        .service-cards-container {
+            grid-template-columns: 1fr;
+        }
+
+        .service-card.full-width {
+            grid-template-columns: 1fr;
+        }
+
+        .service-card.full-width .service-card-content {
+            order: 2;
+        }
+        .service-card.full-width .service-card-image {
+            order: 1;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .creative-service {
+            padding: 30px 5%;
+        }
+
+        .creative-service-header {
+            margin-bottom: 30px;
+        }
+        
+        .creative-service-header h1 {
+            font-size: 2rem;
+        }
+        
+        .service-card-content {
+            padding: 20px;
+        }
+    }
+</style>
+  </body>
 </html>
