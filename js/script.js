@@ -8,33 +8,33 @@ const options = {
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-        stats.forEach((stat) => {
-        const target = parseInt(stat.innerText.replace(/\D/g, ""), 10);
-        let count = 0;
-        const duration = 2000;
-        const increment = target / (duration / 16);
+entries.forEach((entry) => {
+if (entry.isIntersecting) {
+    stats.forEach((stat) => {
+    const target = parseInt(stat.innerText.replace(/\D/g, ""), 10);
+    let count = 0;
+    const duration = 2000;
+    const increment = target / (duration / 16);
 
-        const updateCount = () => {
-            count += increment;
-            if (count < target) {
-            stat.innerText = Math.floor(count) + "+";
-            requestAnimationFrame(updateCount);
-            } else {
-            stat.innerText = target + "+";
-            }
-        };
+    const updateCount = () => {
+        count += increment;
+        if (count < target) {
+        stat.innerText = Math.floor(count) + "+";
+        requestAnimationFrame(updateCount);
+        } else {
+        stat.innerText = target + "+";
+        }
+    };
 
-        updateCount();
-        });
-        observer.unobserve(statsSection);
-    }
+    updateCount();
     });
+    observer.unobserve(statsSection);
+}
+});
 }, options);
 
 if (statsSection) {
-    observer.observe(statsSection);
+observer.observe(statsSection);
 }
 });
 
@@ -69,11 +69,15 @@ faqItems.forEach(item => {
 
 
 
-// testing Swiper
+// Testing Swiper with autoplay and dots only
 var swiper = new Swiper(".mySwiper", {
     loop: true,
+    // autoplay: {
+    //     delay: 3000, 
+    //     disableOnInteraction: false, 
+    // },
     pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });

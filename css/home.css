@@ -24,7 +24,7 @@
     align-items: center;
 }
 .hero-section .main-column .content-column h1{
-  font-family: Space Grotesk;
+  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 56px;
   line-height: 82px;
@@ -44,7 +44,7 @@
     align-items: end;
 }
 .hero-section .main-column .content-column .review h3{
-    font-family: Urbanist;
+    font-family: var(--secondary-font);
     font-weight: 500;
     font-style: Medium;
     font-size: 18px;
@@ -68,7 +68,7 @@
     margin: 0 auto;
 }
 .trusted-section .main-column .trusted-content h2{
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -115,7 +115,7 @@
     gap: 16px;
 }
 .about-section .about-container .main-column .development .common-column h2{
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 700;
     font-style: Bold;
     font-size: 28px;
@@ -124,15 +124,6 @@
     color: #FFFFFFE5;
     margin-bottom: 16px;
 }
-.about-section .about-container .main-column .development .common-column p{
-    font-family: Space Grotesk;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: -2%;
-    color: #D2D2D2;
-}
-
 
 .lumos-section {
     padding: 80px 62px;
@@ -149,13 +140,6 @@
     column-gap: 68px;
 }
 .lumos-section .left-content .main-heading {
-    font-family: Space Grotesk;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    letter-spacing: -2%;
-    text-transform: uppercase;
-    color: #FFFFFFE5;
     position: relative;
     display: inline;
 }
@@ -173,7 +157,7 @@
     position: absolute;
 }
 .lumos-section .right-content .description{
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 24px;
     line-height: 35px;
@@ -196,7 +180,7 @@
 }
 
 .lumos-section .stats-wrapper .count-time h3{
-    font-family: Urbanist;
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 36px;
     line-height: 54px;
@@ -206,7 +190,7 @@
     margin-bottom: 8px;
 }
 .lumos-section .stats-wrapper .count-time span{
-    font-family: Urbanist;
+    font-family: var(--secondary-font);
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -229,7 +213,7 @@
     gap: 80px;
 }
 .creative-service-header h2{
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 42px;
     line-height: 54px;
@@ -237,10 +221,8 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
-
 .creative-service .creative-service-header p {
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -292,25 +274,6 @@
     flex-direction: column;
     gap: 20px;
 }
-
-.creative-service .service-card h2 {
-    font-family: Space Grotesk;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    letter-spacing: -2%;
-    text-transform: uppercase;
-    color: #FFFFFFE5;
-}
-
-.creative-service .service-card p {
-    font-family: Space Grotesk;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: -2%;
-    color: #D2D2D2;
-}
 .creative-service .radius-image{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -338,24 +301,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-.amazing-web-design-section .text-content h2 {
-    font-family: Space Grotesk;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    letter-spacing: -2%;
-    text-transform: uppercase;
-    color: #FFFFFFE5;
-}
-
-.amazing-web-design-section .text-content p {
-    font-family: Space Grotesk;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: -2%;
-    color: #D2D2D2;
 }
 
 .amazing-web-design-section .image-content {
@@ -385,17 +330,10 @@
 }
 
 .why-choose-us-section .section-title {
-    font-family: Space Grotesk;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    letter-spacing: -2%;
-    text-transform: uppercase;
-    color: #FFFFFFE5;
     max-width: 40%;
 }
 .why-choose-us-section .section-description {
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 400;;
     font-size: 24px;
     line-height: 28px;
@@ -426,24 +364,15 @@
 }
 
 .why-choose-us-section .feature-title {
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
     letter-spacing: -2%;
     color: #FFFFFFE5;
 }
-
-.why-choose-us-section .feature-text {
-    font-family: Space Grotesk;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: -2%;
-    color: #D2D2D2;
-}
 .why-choose-us-section .read-more-link {
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
@@ -458,6 +387,12 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.why-choose-us-section .read-more-link:hover{
+    text-decoration: none;
+    color: #A7DE83;
+
 }
 .why-choose-us-section .read-more-link img{
     width: 44px;
@@ -477,19 +412,12 @@
     margin-bottom: 50px;
 }
 .faq-section .faq-title {
-    font-family: Space Grotesk;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    letter-spacing: -2%;
-    text-transform: uppercase;
-    color: #FFFFFFE5;
     max-width: 40%;
     margin-bottom: 10px;
 }
 
 .faq-section  .faq-subtitle {
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -512,7 +440,7 @@
     width: 100%;
     background: transparent;
     border: none;
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
@@ -550,7 +478,7 @@
   
 }
 .faq-section .faq-answer p {
-    font-family: Space Grotesk;
+    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 18px;
     color: #ffffff;
@@ -587,7 +515,7 @@
     gap: 50px;
 }
 
-.avatar {
+.testimonial-container .avatar {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -595,8 +523,8 @@
     margin-bottom: 20px;
 }
 
-.message {
-    font-family: Space Grotesk;
+.testimonial-container .message {
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 36px;
     line-height: 54px;
@@ -606,8 +534,8 @@
     margin-top: -12px;
 }
 
-.author {
-    font-family: Space Grotesk;
+.testimonial-container .author {
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 36px;
@@ -618,8 +546,8 @@
     color: #060805;
 }
 
-.location {
-    font-family: Space Grotesk;
+.testimonial-container .location {
+    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -627,12 +555,12 @@
     color: #060805;
 }
 
-.swiper-pagination {
+.testimonial-container .swiper-pagination {
     margin-top: 0px;
     text-align: right !important;
 }
 
-.swiper-pagination-bullet {
+.testimonial-container .swiper-pagination-bullet {
     background: #00000080;
     opacity: 0.5;
     width: 12px;
@@ -641,14 +569,18 @@
     margin: 0 4px !important;
 }
 
-.swiper-pagination-bullet-active {
+.testimonial-container .swiper-pagination-bullet-active {
     opacity: 1;
     background: #000 !important;
     width: 12px !important;
     height: 24px !important;
     border-radius: 6px !important;
 }
-
+.testimonial-container .swiper-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 
 /* about section css code end */
 
