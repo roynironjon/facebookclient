@@ -472,28 +472,9 @@
     width: 100%;
 }
 
-.faq-header {
+.faq-section  .faq-header {
     max-width: 800px;
     margin-bottom: 50px;
-}
-.faq-container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-}
-.faq-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--heading-color);
-    margin: 0 0 20px 0;
-}
-
-.faq-subtitle {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #a0a0a0;
-    margin: 0;
 }
 .faq-section .faq-title {
     font-family: Space Grotesk;
@@ -504,113 +485,170 @@
     text-transform: uppercase;
     color: #FFFFFFE5;
     max-width: 40%;
+    margin-bottom: 10px;
 }
-.faq-section .faq-subtitle {
+
+.faq-section  .faq-subtitle {
     font-family: Space Grotesk;
-    font-weight: 400;;
+    font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -2%;
-    color: #D2D2D2;;
-}
-.faq-question span{
-    font-family: Space Grotesk;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: -2%;
-    color: #FFFFFFE5;
+    color: #D2D2D2;
+    margin-bottom: 40px;
 }
 
-.faq-item {
-    border-bottom: 1px solid var(--border-color);
-    padding: 20px 0;
+.faq-section  .faq-container {
     width: 100%;
 }
 
-.faq-question {
+.faq-section  .faq-item {
+    border-bottom: 1px solid #ffffff33;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.faq-section .faq-question {
     width: 100%;
     background: transparent;
     border: none;
-    color: var(--text-color);
-    text-align: left;
-    padding: 0;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -2%;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: color 0.3s ease;
-}
-
-.faq-question:hover {
-    color: var(--link-color);
-}
-
-.faq-question:hover .faq-icon {
-    color: var(--link-color);
-}
-
-.faq-question span:first-child {
-    flex-grow: 1;
-    padding-right: 20px;
-}
-
-.faq-icon {
-    font-size: 1.5rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-    line-height: 1;
-    font-weight: lighter;
-}
-
-.faq-item.active .faq-question .faq-icon {
-    transform: rotate(45deg);
-    color: var(--link-color);
-}
-
-.faq-item.active .faq-question {
-    color: var(--link-color);
-}
-
-.faq-item.active .faq-question .faq-icon {
-    content: '\2713'; /* Checkmark */
-    transform: none;
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    cursor: pointer;
     padding: 0;
+    padding-bottom: 20px;
 }
 
-.faq-item.active .faq-answer {
-    max-height: 200px; /* Adjust this value as needed to be larger than the content */
-    /* padding: 20px 0 0 0; */
+.faq-section .faq-question span {
+    padding-right: 10px;
 }
 
-.faq-answer p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #fff;
-    margin: 0;
-}
-
-/* Adjusting for the specific visual style of the icon */
 .faq-icon {
+    transition: transform 0.4s ease, stroke 0.3s ease;
+    stroke: #F4F2FF;
+}
 
-    font-family: 'Times New Roman', Times, serif; /* A font that has a good checkmark */
-    font-weight: normal;
+/* Active FAQ rotates icon and changes color */
+.faq-section .faq-item.active .faq-icon {
+    transform: rotate(180deg);
+    stroke: #A7DE83;
 }
-.faq-item:not(.active) .faq-icon {
-    content: '\2715'; /* 'X' or multiplication sign */
-    font-size: 1.2em;
+
+.faq-section  .faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
 }
-.faq-item.active .faq-icon {
-    content: '\2713'; /* Checkmark */
-    font-size: 1.2em;
+.faq-item.active .faq-answer {
+  
 }
+.faq-section .faq-answer p {
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* faq section end */
+
+/* testimonial section start */
+.testimonial-container {
+    background-color: #a1dc6b;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.testimonial-container .swiper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.testimonial-box {
+    text-align: left;
+    color: #000;
+    position: relative;
+}
+.testimonial-container .testimonial-box .main-testimonial{
+    display: flex;
+    column-gap: 40px;
+}
+
+.testimonial-container .testimonial-box .main-testimonial .content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid #000;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: -2%;
+    text-transform: uppercase;
+    color: #060805;
+    margin-top: -12px;
+}
+
+.author {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 20px;
+    color: #060805;
+}
+
+.location {
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #060805;
+}
+
+.swiper-pagination {
+    margin-top: 0px;
+    text-align: right !important;
+}
+
+.swiper-pagination-bullet {
+    background: #00000080;
+    opacity: 0.5;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #000 !important;
+    width: 12px !important;
+    height: 24px !important;
+    border-radius: 6px !important;
+}
+
 
 /* about section css code end */
 

@@ -1,319 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Footer Design</title>
-    <style>
-      :root {
-        --background-color: #1a1a1a;
-        --text-color: #f0f0f0;
-        --light-gray-text: #b0b0b0;
-        --accent-color: #22c55e;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonial Slider</title>
 
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        background-color: var(--background-color);
-        color: var(--text-color);
-        margin: 0;
-      }
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-      .lumos-section {
-        padding: 80px 62px;
-        background-color:#212121;
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 91px;
-      }
-      .lumos-section .left-content {
-        flex: 1;
-        min-width: 300px;
-      }
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
 
-      .main-heading {
-        font-size: 3rem;
-        line-height: 1.2;
-        font-weight: bold;
-        color: var(--text-color);
-        margin: 0;
-        text-transform: uppercase;
-      }
-      .lumos-section .right-content {
-        flex: 1.5;
-        min-width: 400px;
-      }
+    .testimonial-container {
+      background-color: #a1dc6b;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
 
-      .stats-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        align-items: center;
-      }
+    .testimonial-box {
+      max-width: 800px;
+      text-align: left;
+      color: #000;
+      position: relative;
+    }
 
-      .stats-item {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        flex: 1;
-        min-width: 200px;
-      }
+    .avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 4px solid #000;
+      margin-bottom: 20px;
+    }
 
-      .arrow-container {
-        display: flex;
-        align-items: center;
-      }
+    .message {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 1.6;
+      text-transform: uppercase;
+    }
 
-      .arrow-icon {
-        width: 24px;
-        height: 24px;
-        fill: var(--accent-color);
-        transform: rotate(90deg); /* Adjust arrow rotation if needed */
-      }
+    .author {
+      font-weight: bold;
+      margin-top: 20px;
+    }
 
-      .stat-content {
-        display: flex;
-        flex-direction: column;
-      }
+    .location {
+      font-size: 14px;
+      color: #333;
+    }
 
-      .number {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: var(--text-color);
-        line-height: 1;
-      }
+    .swiper-pagination {
+      margin-top: 20px;
+      text-align: right;
+      padding-right: 40px;
+    }
 
-      .label {
-        font-size: 1rem;
-        color: var(--light-gray-text);
-        margin-top: 5px;
-      }
+    .swiper-pagination-bullet {
+      background: #333;
+      opacity: 0.5;
+    }
 
-      @media (max-width: 768px) {
-        .content-wrapper {
-          flex-direction: column;
-        }
-
-        .left-content,
-        .right-content {
-          min-width: unset;
-        }
-
-        .main-heading {
-          font-size: 2.5rem;
-        }
-
-        .stats-wrapper {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .stats-item {
-          width: 100%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <section class="creative-service">
-        <div class="creative-service-header">
-            <h1>KEEPING TRACK OF OUR CREATIVE SERVICE</h1>
-            <p>At OptimizedByAlex, we prioritize responsiveness to ensure your website adapts seamlessly across all devices.At OptimizedByAlex, we prioritize responsiveness</p>
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="testimonial-container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+            <img src="https://i.ibb.co/vPYyx3M/avatar.png" class="avatar" />
+            <p class="message">
+              ROUTE AGENCY TEAM ARE JUST AMAZING. WE HAVE HAD SOME PERSONAL WEBSITES AND DASHBOARDS. THE TEAM ALWAYS DELIVERED ON TIME. THE BEST QUALITY WITH ENDLESS ITERATIONS. GOOD JOB!
+            </p>
+            <h4 class="author">Elizabeth</h4>
+            <p class="location">Los Angeles, CA</p>
+          </div>
         </div>
-        <div class="service-cards-container">
-            <div class="service-card">
-                <div class="service-card-image">
-                    <img src="https://via.placeholder.com/600x350" alt="Code on screen" />
-                </div>
-                <div class="service-card-content">
-                    <h2>WORDPRESS DEVELOPER</h2>
-                    <p>Ready to set your brand apart in the digital realm? OptimizedByAlex, your Vancouver, WA-based partner, specializes in crafting bespoke website designs and SEO strategies. Our tailored approach ensures your online presence reflects your brand identity while captivating your audience.</p>
-                    <p>Let's embark on this digital journey together!At OptimizedByAlex, exceeding your expectations is our standard. Complete the form on the right, tailored to your brand's needs. Share insights about your project, and we'll create a personalized quote that aligns perfectly with your vision. Elevate your brand's online impact starting today.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-card-image">
-                    <img src="https://via.placeholder.com/600x350" alt="Video editing timeline" />
-                </div>
-                <div class="service-card-content">
-                    <h2>SEO</h2>
-                    <p>Ready to set your brand apart in the digital realm? OptimizedByAlex, your Vancouver, WA-based partner, specializes in crafting bespoke website designs and SEO strategies. Our tailored approach ensures your online presence reflects your brand identity while captivating your audience.</p>
-                    <p>Let's embark on this digital journey together!At OptimizedByAlex, exceeding your expectations is our standard. Complete the form on the right, tailored to your brand's needs. Share insights about your project, and we'll create a personalized quote that aligns perfectly with your vision. Elevate your brand's online impact starting today.</p>
-                </div>
-            </div>
-            <div class="service-card full-width">
-                <div class="service-card-content">
-                    <h2>PPC</h2>
-                    <p>Ready to set your brand apart in the digital realm? OptimizedByAlex, your Vancouver, WA-based partner, specializes in crafting bespoke website designs and SEO strategies. Our tailored approach ensures your online presence reflects your brand identity while captivating your audience.</p>
-                    <p>Let's embark on this digital journey together!At OptimizedByAlex, exceeding your expectations is our standard. Complete the form on the right, tailored to your brand's needs. Share insights about your project, and we'll create a personalized quote that aligns perfectly with your vision. Elevate your brand's online impact starting today.</p>
-                </div>
-                <div class="service-card-image">
-                    <img src="https://via.placeholder.com/600x350" alt="Hand holding a phone with data icons" />
-                </div>
-            </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+            <img src="https://i.ibb.co/vPYyx3M/avatar.png" class="avatar" />
+            <p class="message">
+              THE TEAM WENT ABOVE AND BEYOND TO DELIVER EXCELLENT SERVICE. WE ARE VERY HAPPY WITH THE RESULTS!
+            </p>
+            <h4 class="author">Michael</h4>
+            <p class="location">New York, NY</p>
+          </div>
         </div>
-    </section>
+      </div>
 
-<style>
-    :root {
-        --dark-grey: #1c1c1c;
-        --light-grey: #f0f0f0;
-        --white: #ffffff;
-        --text-color: #e0e0e0;
-        --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    }
+      <!-- Pagination Dots -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
 
-    .creative-service {
-        font-family: var(--font-family-sans);
-        background-color: var(--dark-grey);
-        color: var(--text-color);
-        padding: 50px 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-sizing: border-box;
-    }
-
-    .creative-service-header {
-        width: 100%;
-        max-width: 1200px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 50px;
-        gap: 30px;
-    }
-
-    .creative-service-header h1 {
-        font-size: 3rem;
-        font-weight: bold;
-        color: var(--white);
-        margin: 0;
-        line-height: 1.2;
-        flex: 1;
-        max-width: 50%;
-    }
-
-    .creative-service-header p {
-        font-size: 1rem;
-        line-height: 1.6;
-        color: #b0b0b0;
-        margin: 0;
-        flex: 1;
-        max-width: 50%;
-    }
-
-    .service-cards-container {
-        width: 100%;
-        max-width: 1200px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .service-card {
-        background-color: var(--dark-grey);
-        border: 1px solid #333;
-        border-radius: 8px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .service-card.full-width {
-        grid-column: span 2;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .service-card-image {
-        width: 100%;
-        height: 250px;
-        background-color: #000;
-        overflow: hidden;
-    }
-
-    .service-card-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-    }
-
-    .service-card-content {
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .service-card.full-width .service-card-content {
-        padding: 30px 40px;
-    }
-
-    .service-card h2 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: var(--white);
-        margin: 0;
-    }
-
-    .service-card p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        color: #b0b0b0;
-        margin: 0;
-    }
-
-    @media (max-width: 1024px) {
-        .creative-service-header {
-            flex-direction: column;
-        }
-
-        .creative-service-header h1,
-        .creative-service-header p {
-            max-width: 100%;
-        }
-        
-        .creative-service-header h1 {
-            font-size: 2.5rem;
-        }
-
-        .service-cards-container {
-            grid-template-columns: 1fr;
-        }
-
-        .service-card.full-width {
-            grid-template-columns: 1fr;
-        }
-
-        .service-card.full-width .service-card-content {
-            order: 2;
-        }
-        .service-card.full-width .service-card-image {
-            order: 1;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .creative-service {
-            padding: 30px 5%;
-        }
-
-        .creative-service-header {
-            margin-bottom: 30px;
-        }
-        
-        .creative-service-header h1 {
-            font-size: 2rem;
-        }
-        
-        .service-card-content {
-            padding: 20px;
-        }
-    }
-</style>
-  </body>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
 </html>

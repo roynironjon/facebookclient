@@ -39,39 +39,41 @@ if (statsSection) {
 });
 
 
+const faqItems = document.querySelectorAll('.faq-item');
 
- document.addEventListener('DOMContentLoaded', function () {
-        const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+  const btn = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
 
-        faqItems.forEach(item => {
-            const questionButton = item.querySelector('.faq-question');
-            const answerDiv = item.querySelector('.faq-answer');
+  btn.addEventListener('click', () => {
+    const isActive = item.classList.contains('active');
 
-            questionButton.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-
-                // Close all other open items
-                faqItems.forEach(otherItem => {
-                    if (otherItem !== item && otherItem.classList.contains('active')) {
-                        otherItem.classList.remove('active');
-                        otherItem.querySelector('.faq-answer').style.maxHeight = null;
-                    }
-                });
-
-                // Toggle the clicked item
-                if (isActive) {
-                    item.classList.remove('active');
-                    answerDiv.style.maxHeight = null;
-                } else {
-                    item.classList.add('active');
-                    // Set max-height to the scrollHeight for smooth transition
-                    answerDiv.style.maxHeight = answerDiv.scrollHeight + 'px';
-                }
-            });
-
-            // Handle initial state on page load for the pre-active item
-            if (item.classList.contains('active')) {
-                answerDiv.style.maxHeight = answerDiv.scrollHeight + 'px';
-            }
-        });
+    // Close all others
+    faqItems.forEach(other => {
+      if (other !== item) {
+        other.classList.remove('active');
+        other.querySelector('.faq-answer').style.maxHeight = null;
+      }
     });
+
+    // Toggle this one
+    if (!isActive) {
+      item.classList.add('active');
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      item.classList.remove('active');
+      answer.style.maxHeight = null;
+    }
+  });
+});
+
+
+
+// testing Swiper
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+});
