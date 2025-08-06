@@ -25,6 +25,12 @@
     line-height: 96px;
     letter-spacing: -5%;
     text-transform: uppercase;
+    background: linear-gradient(90deg, #FFFFFF 50%, #474747 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+    display: inline-block;
 }
 .common-heading{
     font-family: var(--primary-font);
@@ -43,6 +49,32 @@
     letter-spacing: -2%;
     color: #D2D2D2;
 }
+.common-button{
+    display: flex;
+    column-gap: 10px;
+    padding: 14px 24px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid transparent;
+    background-image: linear-gradient(#2C3B23, #2C3B23), linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+    transition: all 0.3s ease-in-out;
+}
+.common-button:hover {
+    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
 body{
     background: #060805;
 }
@@ -125,7 +157,7 @@ body{
 }
 .main-footer .footer-container .top-footer .main-column {
 	display: grid;
-	grid-template-columns: 2fr 2fr 1fr 2fr;
+	grid-template-columns: 2fr 1.5fr 1fr 2fr;
 	column-gap: 40px;
 }
 .main-footer .footer-container .top-footer .main-columnn .footer .image{
@@ -282,3 +314,144 @@ body{
 /* ===================================
     header and css code end
 =======================================*/
+
+
+/*========================================
+    inner hero section css code here
+==========================================*/
+.inner-hero-section {
+    padding: 206px 0;
+    position: relative;
+}
+.inner-hero-section::after{
+    content: '';
+    background: url(../assets/images/innerafterbg.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+}
+.inner-hero-section  .content-column {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner-hero-section .breadcrumb-custom {
+    display: flex;
+    padding: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: transparent;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -2%;
+}
+
+.inner-hero-section .breadcrumb-custom .breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.inner-hero-section .breadcrumb-custom .breadcrumb-item a {
+    color: #A7DE83;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.inner-hero-section .breadcrumb-custom .breadcrumb-item a:hover {
+    color: #ffffff;
+}
+
+.inner-hero-section .breadcrumb-custom .breadcrumb-item.active {
+    color: #ffffff;
+}
+
+.inner-hero-section .breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
+    content: "\f105"; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600; 
+    color: #ffffff;
+    padding: 0 8px;
+}
+/* ===============================================
+    inner hero section css code end
+==================================================*/
+
+
+/*========================================
+    about section css code here
+==========================================*/
+
+.main-common-section .main-common-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+}
+.main-common-section .main-common-container .about-main-column {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 91px;
+    padding: 80px 62px;
+    background: #212121;
+    border: 1px solid #2B2B2B45;
+    border-radius: 20px;
+}
+.main-common-section .main-common-container .about-main-column .common-heading img{
+    margin-right: 10px;
+}
+.main-common-section .main-common-container .about-main-column .content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+.main-common-section .main-common-container .update-main-column {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 91px;
+    padding: 120px 62px;
+    background: #212121;
+    border: 1px solid #2B2B2B45;
+    border-radius: 20px;
+}
+.main-common-section .main-common-container .update-main-column .common-heading-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-common-section .main-common-container .update-main-column .common-heading-content img{
+    width: fit-content;
+}
+.main-common-section .main-common-container .update-main-column .content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+.main-common-section .main-common-container .target-main-column {
+    display: grid;
+    grid-template-columns: 2fr 2.1fr;
+    column-gap: 80px;
+    padding: 0px 20px;
+    align-items: center;
+}
+.main-common-section .main-common-container .target-main-column .image-column img {
+    width: 100%;
+}
+.main-common-section .main-common-container .target-main-column .content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.main-common-section .main-common-container .target-main-column .content .target-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}

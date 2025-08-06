@@ -1,0 +1,42 @@
+.newsletter-about-section{
+    padding: 120px 81px;
+    background: #A7DE83;
+    margin-bottom: 55px;
+    margin-top: 120px;
+}
+.newsletter-about-section .content-column{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+}
+.newsletter-about-section .content-column h2{
+    color: #060805 !important;
+}
+.newsletter-about-section .content-column .common-nesletter-button{
+    display: flex;
+    column-gap: 10px;
+    padding: 14px 24px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid transparent;
+    background-image: linear-gradient(#060805, #060805), linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.newsletter-about-section .content-column .common-nesletter-button:hover {
+    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
