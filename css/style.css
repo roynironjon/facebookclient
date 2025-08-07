@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
 
+
+
+
 /* CSS Variables for Typography */
 :root{
     --primary-font: 'Space Grotesk', sans-serif;
@@ -290,7 +293,7 @@ body{
     padding: 2px;
 }
 
-.newsletter-form {
+.main-footer .footer-container .newsletter-form {
     display: flex;
     align-items: center;
     border-radius: 50px;
@@ -302,7 +305,7 @@ body{
     padding: 0px 10px;
 }
 
-.email-input {
+.main-footer .footer-container .email-input {
     padding: 20px 10px;
     font-family: var(--primary-font);
     font-weight: 400;
@@ -316,11 +319,11 @@ body{
     color: #FFFFFF;
 }
 
-.email-input::placeholder {
+.main-footer .footer-container .email-input::placeholder {
     color: #FFFFFF;
 }
 
-.subscribe-button {
+.main-footer .footer-container .subscribe-button {
     background-color: #A7DE83;
     color: #060805;
     border: none;
@@ -338,7 +341,7 @@ body{
     padding: 10px 15px;
 }
 
-.subscribe-button:hover {
+.main-footer .footer-container .subscribe-button:hover {
     background-color: #000;
     color: #fff;
 }
@@ -352,18 +355,22 @@ body{
 ==========================================*/
 .inner-hero-section {
     padding: 206px 0;
-    position: relative;
+    /* position: relative; */
 }
-.inner-hero-section::after{
+.inner-hero-section::before{
     content: '';
-    background: url(../assets/images/innerafterbg.png) no-repeat center center;
+    background: url(../assets/images/innerafterbg.png);
     width: 100%;
-    height: 100%;
+    height: 796px;
     position: absolute;
     top: 0;
     left: 0;
     background-size: cover;
     z-index: -1;
+    top: 0px;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    background-position: inherit;
 }
 .inner-hero-section  .content-column {
     margin: 0 auto;
@@ -756,57 +763,87 @@ body{
   overflow: hidden;
 }
 
-.map-container iframe {
+.map-container img {
   width: 100%;
   height: 500px;
   border: none;
   display: block;
   filter: grayscale(0%) contrast(100%);
   border-radius: 16px;
+  object-fit: cover;
 }
 
 .map-card {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  padding: 16px;
-  max-width: 295px;
-  z-index: 10;
+	position: absolute;
+	top: 24px;
+	left: 24px;
+	background: #fff;
+	border-radius: 12px;
+	padding: 16px;
+	width: 295px;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+    box-shadow:
+    0px 9px 20px 0px #0000001A,
+    0px 36px 36px 0px #00000017,
+    0px 81px 49px 0px #0000000D,
+    0px 144px 58px 0px #00000003,
+    0px 225px 63px 0px #00000000;
 }
 
 .map-card h3 {
-  margin: 0 0 10px;
-  font-size: 18px;
-  font-weight: 600;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 150%;
+    color: #242729;
 }
 
-.map-card p {
-  margin: 0 0 10px;
-  font-size: 14px;
-  color: #444;
+.map-card .location {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #4D4E50;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .map-card .rating {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
 }
 
 .map-card .rating span {
-  margin-right: 6px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2C3B23;
 }
-
+.map-card .rating-stars i{
+   font-size: 14px;
+   color: #2C3B23;
+}
 .map-card .rating-value {
   font-weight: bold;
 }
 
 .map-card a {
-  color: #0073e6;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 13px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #2C3B23;
+    text-decoration: none;
+}
+.contact-us-section h3{
+    color: #000000 !important;
+    font-weight: 500;
 }
