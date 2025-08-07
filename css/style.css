@@ -737,3 +737,76 @@ body{
     flex-direction: column;
     gap: 70px !important;
 }
+
+/* ===============================================
+    map section design
+==================================================*/
+.map-section {
+  display: flex;
+  justify-content: center;
+  padding: 150px 20px;
+  background-color: #000;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  display: block;
+  filter: grayscale(0%) contrast(100%);
+  border-radius: 16px;
+}
+
+.map-card {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 16px;
+  max-width: 295px;
+  z-index: 10;
+}
+
+.map-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.map-card p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.map-card .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.map-card .rating span {
+  margin-right: 6px;
+}
+
+.map-card .rating-value {
+  font-weight: bold;
+}
+
+.map-card a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+}
