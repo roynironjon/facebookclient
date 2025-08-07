@@ -92,11 +92,18 @@
 	background-position: left center;
 	position: absolute;
 }
-.addimage img{
+.addimage .img{
     position: absolute;
-    left: auto;
-    margin-top: 30px;
+    right: -75px;
+    margin-top: 28px;
     width: 41px;
+    height: 46px;
+}
+.addimage .imges{
+	position: absolute;
+	right: auto;
+	margin-top: 28px;
+	width: 41px;
 	height: 46px;
 }
 body{
@@ -632,4 +639,101 @@ body{
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 35px;
 	margin: 0 auto;
+}
+
+/* =========================================
+    common why choose section css code 
+============================================*/
+.common-why-chose-section{
+    padding-bottom: 100px;
+}
+.common-why-chose-section .container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.common-why-chose-section .container .common-why-chose-column{
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    column-gap: 99px;
+    row-gap: 40px;
+}
+.common-why-chose-section .container .common-why-chose-column .common-why-chose-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.common-why-chose-section .container .common-why-chose-column .content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.common-why-chose-section .container .common-why-chose-column .content .feature-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+.common-why-chose-section .container .feature-card {
+	background-color: transparent;
+	display: flex;
+	align-items: flex-start;
+	gap: 24px;
+	border-radius: 8px;
+}
+.common-why-chose-section .container .common-why-chose-column .content .read-more-link {
+	font-family: var(--primary-font);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-thickness: 6%;
+	gap: 5px;
+	font-weight: bold;
+	transition: transform 0.3s ease;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	transition: all 0.3s ease-in-out;
+}
+.common-why-chose-section .container .common-why-chose-column .content .read-more-link:hover {
+	text-decoration: none;
+	color: #A7DE83;
+    transform: translateX(5px);
+}
+.common-why-chose-section .common-why-chose-column .build-link-why-content .text{
+    padding: 16px 18px;
+    border-radius: 10px;
+    background: #2C3B23;
+}
+/*=================================================
+    common why choose section css code end
+====================================================*/
+
+.main-common-section .build-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-common-section .build-link img{
+    width: fit-content;
+}
+.main-common-section .build-link-content-about strong{
+    color: #fff;
+}
+.main-common-section .build-link-content-about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px !important;
+}
+.main-common-section .build-link-content-about .pra-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px !important;
+}
+.benifits-section .build-link-benifitst-column{
+    display: flex;
+    flex-direction: column;
+    gap: 70px !important;
 }
