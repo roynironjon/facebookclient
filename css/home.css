@@ -453,9 +453,7 @@
   max-height: 0;
   transition: max-height 0.3s ease;
 }
-.faq-item.active .faq-answer {
-  
-}
+
 .faq-section .faq-answer p {
     font-family: var(--primary-font);
     font-weight: 400;

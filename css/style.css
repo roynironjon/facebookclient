@@ -720,7 +720,7 @@ body{
 .common-why-chose-section .container .common-why-chose-column .content .feature-content{
     display: flex;
     flex-direction: column;
-    row-gap: 18px;
+    row-gap: 6px;
 }
 .common-why-chose-section .container .feature-card {
 	background-color: transparent;
