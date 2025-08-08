@@ -54,30 +54,7 @@
     flex-direction: column;
     gap: 40px;
 }
-.benifits-section .benifitst-column  .common-column .feature-content a{
-    font-family: var(--secondary-font);
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0%;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: auto;
-    text-decoration-style: solid;
-    text-decoration-thickness: 6%;
-    gap: 5px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    transition: all 0.3s ease-in-out;
-}
-.benifits-section .benifitst-column .common-column .feature-content a:hover {
-	text-decoration: none;
-	color: #A7DE83;
-    transform: translateX(5px);
-}
+
 .benifits-section .benifitst-column .benifits-bottom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
