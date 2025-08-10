@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
-
-
-
 
 /* CSS Variables for Typography */
 :root{
@@ -42,8 +38,10 @@
 .common-heading{
     font-family: var(--primary-font);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
+    /* font-size: 36px;
+    line-height: 54px; */
+    font-size: 32px;
+    line-height: 39px;
     letter-spacing: -2%;
     text-transform: uppercase;
     color: var(--white-color);
@@ -59,8 +57,10 @@
 .text{
     font-family: var(--primary-font);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+    /* font-size: 20px;
+    line-height: 28px; */
+    font-size: 16px;
+    line-height: 23px;
     letter-spacing: -2%;
     color: var(--text-color);
 }
@@ -1070,7 +1070,11 @@ body{
     justify-content: space-between;
 }
 .contact-section .contact-container .contact-info .text{
-    color: var(--black-color);
+    color: var(--black-color) !important;
+}
+.contact-section .contact-container .contact-info .second-others-headign{
+    color: var(--black-color) !important;
+    margin-bottom: 20px;
 }
 .contact-section .contact-container .contact-details {
     display: grid;
