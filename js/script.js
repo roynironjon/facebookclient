@@ -84,11 +84,11 @@ var swiper = new Swiper(".mySwiper", {
 
 
 const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
-const buttonColumn = document.querySelector('.button-column');
+  const menu = document.getElementById('menu');
+  const buttonColumn = document.querySelector('.button-column');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  menu.classList.toggle('active');
-  buttonColumn.classList.toggle('active');
-});
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('active');
+    buttonColumn.classList.toggle('active');
+  });

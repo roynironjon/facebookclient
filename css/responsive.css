@@ -15,6 +15,15 @@
     .common-why-chose-section .container {
        padding: 0px 20px;
     }
+    .hero-section {
+        padding: 80px 20px;
+    }
+    .trusted-section .main-column {
+        padding: 0px 20px;
+    }
+    .about-section .about-container {
+        padding: 0px 20px;
+    }
 }
 
 /* Large Laptop */
@@ -45,6 +54,12 @@
     .benifits-section .befifits-container {
         gap: 60px;
     }
+    .about-section .about-container .main-column {
+        row-gap: 80px;
+    }
+    .amazing-web-design-section .image-content img {
+        width: 100%;
+    }
 }
 /* Small Laptop */
 @media screen and (max-width: 1100px) {
@@ -62,6 +77,22 @@
         font-size: 29px;
         line-height: 36px;
     }
+    .hero-section .main-column .content-column h1 {
+        font-size: 39px;
+        line-height: 49px;
+        margin-bottom: 30px;
+    }
+    .trusted-section .main-column .trusted-content .trusted-images img {
+        width: 100%;
+    }
+    .trusted-section .main-column .trusted-content h2 {
+        margin-bottom: 15px;
+    }
+    .lumos-section {
+        padding: 40px 20px;
+        row-gap: 30px;
+    }
+
 }
 /* Small Laptop */
 @media screen and (max-width: 1024px) {
@@ -96,6 +127,18 @@
     }
     .common-why-chose-section .container .feature-card {
         gap: 15px;
+    }
+    .lumos-section .right-content .description {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .creative-service-header h2 {
+        font-size: 29px;
+        line-height: 36px;
+    }
+    .creative-service .creative-service-header p {
+        font-size: 16px;
+        line-height: 23px;
     }
 }
 
@@ -219,6 +262,36 @@
     .innaer-banner-heading {
         text-align: center;
     }
+    .hero-section .main-column .image-column img {
+        width: 100%;
+    }
+    .about-section .about-container .main-column {
+        row-gap: 40px;
+    }
+    .amazing-web-design-section .content-container {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+        margin: 40px 0px;
+    }
+    .why-choose-us-section .section-description {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .sub-heading-text {
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .faq-section {
+        width: 100%;
+        padding: 40px 0px;
+    }
+    .faq-section .faq-container .faq-item .faq-question span{
+        font-size: 18px !important;
+        line-height: 24px;
+        text-align: left !important;
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -331,11 +404,121 @@
     .why-choose-us-section .feature-card {
         gap: 15px;
     }
-
+    .hero-section .main-column {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .hero-section .main-column .content-column{
+        order: 2;
+    }
+    .hero-section .main-column .image-column{
+        order: 1;
+    }
+    .testimonial-container .testimonial-box .main-testimonial {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .testimonial-container .testimonial-box .main-testimonial .content {
+        align-items: center;
+    }
+    .testimonial-container .avatar {
+        margin-bottom: 0;
+    }
+    .testimonial-container .message {
+        text-align: center;
+    }
+    .testimonial-container .swiper-pagination {
+        justify-content: end;
+        text-align: center !important;
+    }
+    .about-section {
+        padding: 40px 0px;
+    }
+    .about-section .about-container .main-column .development {
+        grid-template-columns: 1fr;
+    }
+    .trusted-section {
+        padding: 40px 0px;
+    }
+    .lumos-section .top-column {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .about-section .about-container {
+        display: block;
+        align-items: center;
+    }
+    .about-section .about-container .main-column {
+        display: block;
+    }
+    .lumos-section {
+        margin: 40px 0px;
+    }
+    .lumos-section .stats-wrapper .count-time h3 {
+        font-size: 20px;
+        line-height: 39px;
+    }
+    .lumos-section .stats-wrapper .count-time span {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .creative-service .service-cards-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .creative-service .service-card.full-width {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .creative-service-header {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .amazing-web-design-section .content-container {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+        margin: 40px 0px;
+    }
+    .amazing-web-design-section .content-container {
+        flex-direction: column;
+    }
+    .amazing-web-design-section .text-content {
+        max-width: 100%;
+        order: 2;
+    }
+    .amazing-web-design-section .image-content {
+        max-width: 100%;
+        order: 1;
+    }
+    .header-container {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .why-choose-us-section .section-title {
+        max-width: 100%;
+    }
+    .why-choose-us-section .section-description {
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 620px){
     .common-why-chose-image img{
         width: 100%;
+    }
+    .trusted-section .main-column .trusted-content .trusted-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+    .lumos-section .stats-wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
     }
 
 } 

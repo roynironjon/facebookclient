@@ -390,8 +390,8 @@ body{
 .about-section .about-container{
     max-width: 1280px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 .about-section .about-container .main-column{
     display: flex;
@@ -685,7 +685,7 @@ body{
     margin-bottom: 50px;
 }
 .faq-section .faq-title {
-    max-width: 40%;
+    /* max-width: 40%; */
     margin-bottom: 10px;
 }
 
@@ -756,7 +756,7 @@ body{
 /*===========================================================
    testimonial section start 
 ===========================================================*/
-.testimonial-container {
+/* .testimonial-container {
     background-color: var(--contact-bg);
     padding: 60px 20px;
     display: flex;
@@ -842,7 +842,100 @@ body{
     display: flex;
     align-items: center;
     justify-content: end;
+} */
+
+
+.testimonial-container {
+    background-color: var(--contact-bg);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
 }
+
+.testimonial-container .swiper {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.testimonial-box {
+    text-align: left;
+    color: var(--black-color);
+    position: relative;
+}
+
+.testimonial-container .testimonial-box .main-testimonial {
+    display: flex;
+    column-gap: 40px;
+    align-items: flex-start;
+}
+
+.testimonial-container .testimonial-box .main-testimonial .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+.testimonial-container .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid #000;
+}
+
+.testimonial-container .message {
+    color: #060805;
+}
+
+.testimonial-container .author {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    text-transform: capitalize;
+    margin-top: 0;
+    color: #060805;
+}
+
+.testimonial-container .location {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #060805;
+    margin-top: 0;
+}
+
+.testimonial-container .swiper-pagination {
+	position: absolute;
+	bottom: 0px;
+	right: 0 !important;
+	text-align: center;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 100% !important;
+}
+
+.testimonial-container .swiper-pagination-bullet {
+    background-color: var(--black-color);
+    opacity: 0.5;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 8px; /* Increased margin for better spacing */
+    transition: all 0.3s ease;
+}
+
+.testimonial-container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: var(--black-color);
+    width: 12px;
+    height: 24px;
+    border-radius: 6px;
+} 
+
 
 /*===========================================================
     about section css code end 
