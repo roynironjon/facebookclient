@@ -42,6 +42,9 @@
     .benifits-section .benifitst-column {
         padding: 60px 20px;
     }
+    .benifits-section .befifits-container {
+        gap: 60px;
+    }
 }
 /* Small Laptop */
 @media screen and (max-width: 1100px) {
@@ -83,7 +86,7 @@
         row-gap: 40px;
     }
     .common-why-chose-image img{
-        width: 100%;
+        width: auto;
     }
     .common-why-chose-section {
         padding-bottom: 60px;
@@ -204,6 +207,18 @@
     .benifits-section .benifitst-column .benifits-bottom {
         grid-template-columns: 1fr 1fr;
     }
+    .benifits-section .befifits-container .why-choose-us-section {
+        gap: 40px;
+    }
+    .why-choose-us-section {
+        gap: 40px;
+    }
+    .inner-hero-container {
+        padding: 0px 20px;
+    }
+    .innaer-banner-heading {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -305,8 +320,26 @@
     .benifits-section .benifitst-column {
         padding: 40px 20px;
     }
+    .benifits-section .befifits-container .why-choose-us-section .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .why-choose-us-section .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .why-choose-us-section .feature-card {
+        gap: 15px;
+    }
 
 }
+@media screen and (max-width: 620px){
+    .common-why-chose-image img{
+        width: 100%;
+    }
+
+} 
+
 
 /* Large Mobile */
 @media screen and (max-width: 575px) {
@@ -338,6 +371,9 @@
     }
     .benifits-section .benifitst-column .common-column {
         padding: 18px;
+    }
+    .common-why-chose-image img{
+        width: 100%;
     }
 }
 
