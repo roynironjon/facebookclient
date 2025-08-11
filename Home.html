@@ -6,35 +6,46 @@
     <title>Home</title>
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   </head>
   <body>
     <!-- Header -->
     <section class="main-header">
-      <div class="main-column">
-        <div class="logo-column">
-          <img src="assets/images/Logo.png" alt="Logo" class="logo" />
+        <div class="main-column">
+            <div class="logo-column">
+            <img src="assets/images/Logo.png" alt="Logo" class="logo" />
+            </div>
+
+            <!-- Hamburger for mobile -->
+            <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+
+            <div class="menu-column" id="menu">
+            <nav class="menu">
+                <ul>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            </div>
+
+            <div class="button-column">
+            <button class="contact-button">
+                Let’s Talk
+                <img src="assets/images/arrow-up-right.png" alt="" />
+            </button>
+            </div>
         </div>
-        <div class="menu-column">
-          <nav class="menu">
-            <ul>
-              <li><a href="#">What We Do</a></li>
-              <li><a href="#">Our Work</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="button-column">
-          <button class="contact-button">
-            Let’s Talk
-            <img src="assets/images/arrow-up-right.png" alt="" srcset="" />
-          </button>
-        </div>
-      </div>
     </section>
     <!-- header section end -->
 
@@ -383,7 +394,6 @@
     <div class="testimonial-container">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
                 <div class="swiper-slide">
                     <div class="testimonial-box">
                         <div class="main-testimonial">
@@ -411,7 +421,7 @@
                                 <img src="assets/images/testimonilaimages.png" class="avatar" />
                             </div>
                             <div class="content">
-                                <p class="message">
+                                <p class="message common-heading">
                                 Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
                                 </p>
                                 <div class="details">
@@ -431,7 +441,7 @@
                                 <img src="assets/images/testimonilaimages.png" class="avatar" />
                             </div>
                             <div class="content">
-                                <p class="message">
+                                <p class="message common-heading">
                                 Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
                                 </p>
                                 <div class="details">
@@ -451,7 +461,7 @@
                                 <img src="assets/images/testimonilaimages.png" class="avatar" />
                             </div>
                             <div class="content">
-                                <p class="message">
+                                <p class="message common-heading">
                                 Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
                                 </p>
                                 <div class="details">
@@ -471,7 +481,7 @@
                                 <img src="assets/images/testimonilaimages.png" class="avatar" />
                             </div>
                             <div class="content">
-                                <p class="message">
+                                <p class="message common-heading">
                                 Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
                                 </p>
                                 <div class="details">
@@ -488,6 +498,75 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
+
+
+    <!-- <div class="testimonial-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-box">
+                        <div class="main-testimonial">
+                            <div class="image">
+                                <img src="assets/images/testimonilaimages.png" class="avatar" />
+                            </div>
+                            <div class="content">
+                                <p class="message common-heading">
+                                    Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
+                                </p>
+                                <div class="details">
+                                    <div class="details-content">
+                                        <h4 class="author">Elizabeth</h4>
+                                        <p class="location">Los Angeles, CA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-box">
+                        <div class="main-testimonial">
+                            <div class="image">
+                                <img src="assets/images/testimonilaimages.png" class="avatar" />
+                            </div>
+                            <div class="content">
+                                <p class="message common-heading">
+                                    The team at Route agency is incredibly professional and skilled. They helped me create a beautiful and functional website that perfectly represents my brand. I couldn't be happier with the results!
+                                </p>
+                                <div class="details">
+                                    <div class="details-content">
+                                        <h4 class="author">John Doe</h4>
+                                        <p class="location">New York, NY</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-box">
+                        <div class="main-testimonial">
+                            <div class="image">
+                                <img src="assets/images/testimonilaimages.png" class="avatar" />
+                            </div>
+                            <div class="content">
+                                <p class="message common-heading">
+                                    I highly recommend Route agency. Their attention to detail and commitment to delivering high-quality work is outstanding. They took my ideas and turned them into a reality, exceeding all my expectations.
+                                </p>
+                                <div class="details">
+                                    <div class="details-content">
+                                        <h4 class="author">Jane Smith</h4>
+                                        <p class="location">Chicago, IL</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div> -->
 
     <!-- Footer -->
     <footer class="main-footer">
@@ -589,15 +668,18 @@
     <script src="js/script.js"></script>
     <!-- Swiper JS -->
 
-    <script>
-        // testing Swiper
+    <!-- <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+                el: ".swiper-pagination",
+                clickable: true,
             },
         });
-    </script>
+    </script> -->
   </body>
 </html>
