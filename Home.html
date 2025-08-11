@@ -6,6 +6,7 @@
     <title>Home</title>
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <!-- Swiper CSS -->
@@ -14,27 +15,36 @@
   <body>
     <!-- Header -->
     <section class="main-header">
-      <div class="main-column">
-        <div class="logo-column">
-          <img src="assets/images/Logo.png" alt="Logo" class="logo" />
+        <div class="main-column">
+            <div class="logo-column">
+            <img src="assets/images/Logo.png" alt="Logo" class="logo" />
+            </div>
+
+            <!-- Hamburger for mobile -->
+            <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+
+            <div class="menu-column" id="menu">
+            <nav class="menu">
+                <ul>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            </div>
+
+            <div class="button-column">
+            <button class="contact-button">
+                Let’s Talk
+                <img src="assets/images/arrow-up-right.png" alt="" />
+            </button>
+            </div>
         </div>
-        <div class="menu-column">
-          <nav class="menu">
-            <ul>
-              <li><a href="#">What We Do</a></li>
-              <li><a href="#">Our Work</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="button-column">
-          <button class="contact-button">
-            Let’s Talk
-            <img src="assets/images/arrow-up-right.png" alt="" srcset="" />
-          </button>
-        </div>
-      </div>
     </section>
     <!-- header section end -->
 

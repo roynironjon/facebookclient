@@ -81,3 +81,14 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+const buttonColumn = document.querySelector('.button-column');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+  buttonColumn.classList.toggle('active');
+});

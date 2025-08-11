@@ -111,6 +111,58 @@
         column-gap: 20px;
         padding: 30px;
     }
+
+    .main-header {
+        padding: 20px 20px;
+        position: relative;
+    }
+    /* .main-header .main-column {
+        position: relative;
+    } */
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hide menu & button by default */
+    .menu-column, .button-column {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 40px 0;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        z-index: 1000;
+        border-top: 1px solid #dcdcdc5c;
+    }
+
+    /* Show menu & button when active */
+    .menu-column.active, .button-column.active {
+        display: block;
+    }
+
+    .main-header .main-column .menu ul {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 0;
+        margin: 0;
+    }
+    .main-header .main-column .menu ul li {
+        text-align: center;
+        font-size: 20px;
+    }
+    .main-header .main-column .button-column {
+        margin-top: 20px;
+        text-align: center;
+        display: none;
+    }
+
+    .main-header .main-column {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -247,6 +299,16 @@
     }
     .inner-hero-section .breadcrumb-custom {
         font-size: 12px;
+    }
+    .main-header {
+      padding: 15px 20px;
+    }
+    .main-header .main-column .menu ul li {
+      font-size: 18px;
+    }
+    .main-header .main-column .button-column .contact-button {
+      font-size: 16px;
+      padding: 12px 20px;
     }
 }
 
