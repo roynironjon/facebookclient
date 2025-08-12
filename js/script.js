@@ -82,13 +82,21 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-
+// dropdowan menu js code here
 const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
-  const buttonColumn = document.querySelector('.button-column');
+const menu = document.getElementById('menu');
+const buttonColumn = document.querySelector('.button-column');
+const overlay = document.getElementById('menu-overlay');
 
-  hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     menu.classList.toggle('active');
     buttonColumn.classList.toggle('active');
-  });
+    overlay.classList.toggle('active');
+});
+overlay.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+    buttonColumn.classList.remove('active');
+    overlay.classList.remove('active');
+});

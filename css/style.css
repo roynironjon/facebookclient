@@ -254,9 +254,6 @@ body{
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
     transform: translateY(-2px);
 }
-/* Existing styles from your CSS */
-/* ... */
-/* Hamburger styles */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -273,8 +270,10 @@ body{
   border-radius: 2px;
   transition: 0.3s ease;
 }
+.menu-column .contact-button{
+    display: none;
+}
 
-/* Toggle hamburger animation */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -707,12 +706,6 @@ body{
     width: 100%;
     background: transparent;
     border: none;
-    font-family: var(--primary-font);
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: -2%;
-    color: var(--white-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -756,94 +749,6 @@ body{
 /*===========================================================
    testimonial section start 
 ===========================================================*/
-/* .testimonial-container {
-    background-color: var(--contact-bg);
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-}
-.testimonial-container .swiper {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-.testimonial-box {
-    text-align: left;
-    color: var(--black-color);
-    position: relative;
-}
-.testimonial-container .testimonial-box .main-testimonial{
-    display: flex;
-    column-gap: 40px;
-}
-
-.testimonial-container .testimonial-box .main-testimonial .content{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-
-.testimonial-container .avatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 4px solid #000;
-    margin-bottom: 20px;
-}
-
-.testimonial-container .message {
-    color: #060805;
-    margin-top: -12px;
-}
-
-.testimonial-container .author {
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 36px;
-    letter-spacing: 0%;
-    text-align: left;
-    text-transform: capitalize;
-    margin-top: 20px;
-    color: #060805;
-}
-
-.testimonial-container .location {
-    font-family: var(--primary-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 0%;
-    color: #060805;
-}
-
-.testimonial-container .swiper-pagination {
-    margin-top: 0px;
-    text-align: right !important;
-}
-
-.testimonial-container .swiper-pagination-bullet {
-    background-color:  var(--black-color) !important;
-    opacity: 0.5;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 0 4px !important;
-}
-
-.testimonial-container .swiper-pagination-bullet-active {
-    opacity: 1;
-    background-color: var(--black-color) !important;
-    width: 12px !important;
-    height: 24px !important;
-    border-radius: 6px !important;
-}
-.testimonial-container .swiper-pagination{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-} */
-
 
 .testimonial-container {
     background-color: var(--contact-bg);
