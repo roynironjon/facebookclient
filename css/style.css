@@ -83,12 +83,13 @@
     background-origin: border-box;
     background-clip: padding-box, border-box, border-box;
     transition: all 0.3s ease-in-out;
+    width: fit-content;
 }
 .common-button:hover {
-    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    transform: translateY(-2px);
+    background: linear-gradient(90deg, #a7de83 0%, #a7de83 100%);
 }
+
+
 
 .addimage{
     display: inline;
@@ -108,22 +109,22 @@
     line-height: 30px;
     letter-spacing: 0%;
     text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: auto;
-    text-decoration-style: solid;
     text-decoration-thickness: 6%;
-    gap: 5px;
     transition: transform 0.3s ease;
     color: var(--white-color);
     display: flex;
     align-items: center;
     gap: 30px;
     transition: all 0.3s ease-in-out;
+    width: fit-content;
 }
 .read-more-link:hover{
     transform: translateX(5px);
     text-decoration: none;
     color: var(--contact-bg);
+}
+.mobile-show{
+    display: none;
 }
 body{
     background: var(--black-color);
@@ -138,65 +139,6 @@ body{
 /*======================================
     header css code here 
 ========================================*/
-/* .main-header{
-    background-color: var(--primary-color);
-    padding: 32px 80px;
-}
-.main-header .main-column{
-    max-width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-.main-header .main-column .menu ul{
-    display: flex;
-    list-style: none;
-    column-gap: 48px;
-}
-.main-header .main-column .menu ul li{
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -2%;
-}
-.main-header .main-column .menu ul li a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-    transition: all 0.3s ease-in-out;
-}
-.main-header .main-column .menu ul li a:hover{
-    color: var(--contact-bg);
-}
-.main-header .main-column .button-column .contact-button {
-    display: flex;
-    column-gap: 10px;
-    padding: 14px 24px;
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -2%;
-    color: rgba(255, 255, 255, 1);
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 50px;
-    outline: none;
-    border: 1px solid transparent;
-    background-image: 
-    linear-gradient(#2C3B23, #2C3B23), linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    background-origin: border-box;
-    background-clip: padding-box, border-box, border-box;
-    transition: all 0.3s ease-in-out;
-}
-.main-header .main-column .button-column .contact-button:hover {
-    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    transform: translateY(-2px);
-} */
-
- /* Existing styles from your CSS */
 .main-header{
     background-color: var(--primary-color);
     padding: 32px 80px;
@@ -224,9 +166,24 @@ body{
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.main-header .main-column .menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--contact-bg);
+    transition: width 0.3s ease-in-out;
+    border-radius: 20px;
 }
 .main-header .main-column .menu ul li a:hover{
     color: var(--contact-bg);
+}
+.main-header .main-column .menu ul li a:hover::after {
+    width: 100%;
 }
 .main-header .main-column .button-column .contact-button {
     display: flex;
@@ -250,9 +207,7 @@ body{
     transition: all 0.3s ease-in-out;
 }
 .main-header .main-column .button-column .contact-button:hover {
-    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    transform: translateY(-2px);
+    background: linear-gradient(90deg, #000 0%, #000 100%);
 }
 .hamburger {
   display: none;
@@ -905,6 +860,7 @@ body{
 .benifits-section .benifitst-column .common-column:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background: #2C3B23;
 }
 .benifits-section .benifitst-column  .common-column .feature-content{
     display: flex;
@@ -968,22 +924,18 @@ body{
     line-height: 28px;
     letter-spacing: -2%;
     color: rgba(255, 255, 255, 1);
-    background-color: transparent;
+    background-color: var(--black-color);
     cursor: pointer;
     border-radius: 50px;
     outline: none;
-    border: 1px solid transparent;
-    background-image: linear-gradient(#060805, #060805), linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    background-origin: border-box;
-    background-clip: padding-box, border-box, border-box;
+    border: 1px solid var(--black-color);
     transition: all 0.3s ease-in-out;
     margin: 0 auto;
 }
 
 .newsletter-about-section .content-column .common-nesletter-button:hover {
-    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    transform: translateY(-2px);
+    background: transparent;
+    border: 1px solid var(--secondary-color);
 }
 
 /* =======================================================
@@ -1021,18 +973,20 @@ body{
     display: flex;
     padding: 0;
     margin-bottom: 1rem;
-    list-style: none;
+    align-items: center;
     background-color: transparent;
-    font-family: var(--primary-font);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 35px;
-    letter-spacing: -2%;
 }
 
 .inner-hero-section .breadcrumb-custom .breadcrumb-item {
     display: flex;
     align-items: center;
+    list-style: none;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: -2%;
+ 
 }
 
 .inner-hero-section .breadcrumb-custom .breadcrumb-item a {
@@ -1272,12 +1226,13 @@ body{
     border-radius: 50px;
     outline: none;
     border: 1px solid var(--black-color);
+    transition: all 0.3s ease-in-out;
 }
 .contact-section .contact-container .contact-form .contact-common-button:hover {
-    background: linear-gradient(90deg, #078b14 0%, #04556b 100%);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    transform: translateY(-2px);
+    background: var(--white-color);
+    border: 1px solid var(--white-color);
 }
+
 
 /*====================================
     payper click css code here

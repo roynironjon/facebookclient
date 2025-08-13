@@ -151,7 +151,7 @@
         font-size: 48px;
         line-height: 59px;
     }
-    .inner-hero-section .breadcrumb-custom {
+    .inner-hero-section .breadcrumb-custom .breadcrumb-item{
         font-size: 18px;
     }
     .contact-section {
@@ -550,6 +550,13 @@
     .testimonial-container{
         margin-bottom: 0px;
     }
+    .mobile-show{
+        display: block;
+        width: fit-content
+    }
+    .desktop-show{
+        display: none;
+    }
 }
 @media screen and (max-width: 620px){
     .common-why-chose-image img{
@@ -576,7 +583,7 @@
     .inner-hero-section {
         padding: 90px 0px;
     }
-    .inner-hero-section .breadcrumb-custom {
+    .inner-hero-section .breadcrumb-custom .breadcrumb-item{
         font-size: 16px;
     }
     .map-section .map-container img {
@@ -631,6 +638,10 @@
     .testimonial-container .swiper {
         padding-bottom: 20px;
     }
+    .read-more-link {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 /* Mobile Landscape */
@@ -647,7 +658,7 @@
         grid-template-columns: 1fr 1.5fr;
         row-gap: 20px;
     }
-    .inner-hero-section .breadcrumb-custom {
+    .inner-hero-section .breadcrumb-custom .breadcrumb-item  {
         font-size: 12px;
     }
     .main-header {
