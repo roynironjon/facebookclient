@@ -90,8 +90,9 @@
     color: #000;
 }
 .common-button i{
-   transform: rotate(-45deg);
-   margin-bottom: -6px;
+  transform: rotate(-45deg);
+  margin-bottom: -18px;
+  margin-left: 10px;
 }
 
 
@@ -112,8 +113,6 @@
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0%;
-    text-decoration: underline;
-    text-decoration-thickness: 6%;
     transition: transform 0.3s ease;
     color: var(--white-color);
     display: flex;
@@ -121,11 +120,14 @@
     gap: 30px;
     transition: all 0.3s ease-in-out;
     width: fit-content;
+    text-decoration: none;
 }
 .read-more-link:hover{
     transform: translateX(5px);
     text-decoration: none;
     color: var(--contact-bg);
+    text-decoration: underline;
+    text-decoration-thickness: 6%;
 }
 .mobile-show{
     display: none;
@@ -189,7 +191,7 @@ body{
 .main-header .main-column .menu ul li a:hover::after {
     width: 100%;
 }
-.main-header .main-column .button-column .contact-button {
+/* .main-header .main-column .button-column .contact-button {
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -210,13 +212,50 @@ body{
     background-origin: border-box;
     background-clip: padding-box, border-box, border-box;
     transition: all 0.3s ease-in-out;
-}
+} */
 .main-header .main-column .button-column .contact-button i{
    transform: rotate(-45deg);
    margin-bottom: 4px;
 }
+
+/* .main-header .main-column .button-column .contact-button:hover {
+    background-image:
+      linear-gradient(var(--contact-bg), var(--contact-bg)),
+      linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    color: #000;
+} */
+
+.main-header .main-column .button-column .contact-button {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 14px 24px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid transparent;
+    background-image:
+      linear-gradient(#2C3B23, #2C3B23),
+      linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 .main-header .main-column .button-column .contact-button:hover {
-    background: var(--contact-bg);
+    background-image:
+      linear-gradient(var(--contact-bg), var(--contact-bg)),
+      linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     color: #000;
 }
 .hamburger {
@@ -873,7 +912,7 @@ body{
     background: #2C3B23;
 } */
 .benifits-section .benifitst-column .common-column:hover {
-  transform: scale(1.05) translateY(-10px);
+  transform: translateY(-20px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   background: #2C3B23;
 }
@@ -1675,13 +1714,12 @@ body{
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -2%;
-    font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s all ease-in-out;
     height: 100%;
     box-sizing: border-box;
-    padding: 10px 15px;
+    padding: 14px 24px;
 }
 .main-footer .footer-container .subscribe-button:hover {
     background-color: var(--black-color);
