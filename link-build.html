@@ -13,20 +13,18 @@
 </head>
 
 <body>
- <!-- Header -->
+    <!-- Header -->
     <section class="main-header">
         <div class="main-column">
             <div class="logo-column">
-            <img src="assets/images/Logo.png" alt="Logo" class="logo" />
+                <img src="assets/images/Logo.png" alt="Logo" class="logo" />
             </div>
-
             <!-- Hamburger for mobile -->
             <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
             <div class="menu-column" id="menu">
                 <nav class="menu">
                     <ul>
@@ -36,16 +34,15 @@
                         <li><a href="#">Careers</a></li>
                     </ul>
                 </nav>
-                <button class="contact-button">
+                <button class="mobile-button">
                     Let’s Talk
-                    <img src="assets/images/arrow-up-right.png" alt="" />
+                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
-
             <div class="button-column">
                 <button class="contact-button">
                     Let’s Talk
-                    <img src="assets/images/arrow-up-right.png" alt="" />
+                   <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
         </div>
@@ -53,7 +50,6 @@
     <!-- Overlay -->
     <div class="menu-overlay" id="menu-overlay"></div>
     <!-- header section end -->
-
     <!-- inner hero section code here  -->
     <section class="inner-hero-section">
         <div class="inner-hero-container">
@@ -91,7 +87,8 @@
                     </div>
                     <button class="common-button">
                         Get A Consultation
-                        <img src="assets/images/arrow-up-right.png" alt="" srcset="" />
+                        <!-- <img src="assets/images/arrow-up-right.png" alt="" srcset="" /> -->
+                        <i class="fa-solid fa-arrow-right"></i>
                     </button>
                     <img class="mobile-show" src="assets/images/Union.png" alt="">
                 </div>
@@ -204,30 +201,39 @@
             </div>
             <div class="contact-form-container">
                 <h3 class="common-heading">GET YOUR TAILORED WEBSITE DESIGN &SEO QUOTE NOW</h3>
-                <form action="#" method="post" class="contact-form">
+                <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="NAME" required>
+                        <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                        <label for="full-name">Full Name</label>
                     </div>
+
                     <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Phone" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                        <label for="phone">Phone</label>
                     </div>
+
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                        <label for="email">E-Mail</label>
                     </div>
+
                     <div class="form-group">
-                        <input type="text" name="website" placeholder="Website">
+                        <input type="text" id="website" name="website" placeholder="Website">
+                        <label for="website">Website</label>
                     </div>
+
                     <div class="form-group">
-                        <select name="service" required>
-                            <option value="" disabled selected>Service</option>
-                            <option value="website-design">Website Design</option>
-                            <option value="seo-strategy">SEO Strategy</option>
-                            <option value="both">Both</option>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected hidden></option>
+                            <option value="design">Web Design</option>
+                            <option value="development">Web Development</option>
+                            <option value="seo">SEO Optimization</option>
                         </select>
+                        <label for="service">Select Service</label>
                     </div>
-                    <button class="contact-common-button">
-                        Let’s Talk
-                        <img src="assets/images/contactbutton.png" alt="" srcset="" />
+                    <button type="submit" class="contact-common-button">
+                       Let’s Talk
+                        <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </form>
             </div>

@@ -191,7 +191,7 @@
     .hamburger {
         display: flex;
     }
-    .menu-column, .button-column {
+    .menu-column, .contact-button {
         position: absolute;
         top: 100%;
         left: 0;
@@ -306,16 +306,15 @@
         line-height: 24px;
         text-align: left !important;
     }
-    .menu-column .contact-button {
-        display: block;
-        margin: 0 auto;
+    .menu-column .mobile-button {
         display: flex;
+        align-items: center;
         column-gap: 10px;
-        padding: 12px 24px;
+        padding: 10px 24px;
         font-family: var(--secondary-font);
         font-weight: 400;
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 18px;
+        line-height: 28px;
         letter-spacing: -2%;
         color: rgba(255, 255, 255, 1);
         background-color: transparent;
@@ -323,16 +322,21 @@
         border-radius: 50px;
         outline: none;
         border: 1px solid transparent;
-        background-image: linear-gradient(#2C3B23, #2C3B23), linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        background-image: 
+        linear-gradient(#2C3B23, #2C3B23), linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
         background-origin: border-box;
         background-clip: padding-box, border-box, border-box;
         transition: all 0.3s ease-in-out;
-        margin-top: 27px;
+        margin: 0 auto;
+        margin-top: 20px;
     }
-    .menu-column .contact-button:hover {
-        background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-        transform: translateY(-2px);
+    .menu-column .mobile-button i{
+        transform: rotate(-45deg);
+        margin-bottom: 4px;
+    }
+    .menu-column .mobile-button:hover {
+        background: var(--contact-bg);
+        color: #000;
     }
 }
 
@@ -577,8 +581,8 @@
 /* Large Mobile */
 @media screen and (max-width: 575px) {
     .innaer-banner-heading {
-        font-size: 32px;
-        line-height: 47px;
+        font-size: 29px;
+        line-height: 36px;
     }
     .inner-hero-section {
         padding: 90px 0px;

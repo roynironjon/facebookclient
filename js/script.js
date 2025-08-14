@@ -100,3 +100,24 @@ overlay.addEventListener('click', () => {
     buttonColumn.classList.remove('active');
     overlay.classList.remove('active');
 });
+
+
+// contact form input field js code here
+document.querySelectorAll('.form-group select').forEach(select => {
+    select.addEventListener('focus', () => {
+        select.parentElement.classList.add('active');
+    });
+
+    select.addEventListener('blur', () => {
+        // Jodi kichu select na kora hoy
+        if (!select.value) {
+            select.parentElement.classList.remove('active');
+        }
+    });
+
+    // Page load e jodi value thake
+    if (select.value) {
+        select.parentElement.classList.add('active');
+    }
+});
+
