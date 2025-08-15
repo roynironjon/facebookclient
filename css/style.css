@@ -64,7 +64,7 @@
     letter-spacing: -2%;
     color: var(--text-color);
 }
-.common-button{
+/* .common-button{
     display: flex;
     column-gap: 10px;
     padding: 14px 24px;
@@ -84,15 +84,36 @@
     background-clip: padding-box, border-box, border-box;
     transition: all 0.3s ease-in-out;
     width: fit-content;
+} */
+.common-button{
+    display: flex;
+    column-gap: 10px;
+    padding: 14px 24px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: var(--text-color);
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid var(--contact-bg);
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
 }
 .common-button:hover {
-    background: linear-gradient(90deg, #a7de83 0%, #a7de83 100%);
+    background: var(--contact-bg);
     color: #000;
 }
+
+
 .common-button i{
   transform: rotate(-45deg);
-  margin-bottom: -18px;
-  margin-left: 10px;
+  margin-bottom: -11px;
+  margin-left: 0px;
+  font-size: 20px;
 }
 
 
@@ -216,6 +237,7 @@ body{
 .main-header .main-column .button-column .contact-button i{
    transform: rotate(-45deg);
    margin-bottom: 4px;
+   font-size: 20px;
 }
 
 /* .main-header .main-column .button-column .contact-button:hover {
@@ -236,26 +258,18 @@ body{
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -2%;
-    color: rgba(255, 255, 255, 1);
+    color: var(--text-color);
     background-color: transparent;
     cursor: pointer;
     border-radius: 50px;
     outline: none;
-    border: 1px solid transparent;
-    background-image:
-      linear-gradient(#2C3B23, #2C3B23),
-      linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    background-origin: border-box;
-    background-clip: padding-box, border-box, border-box;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    border: 1px solid  var(--contact-bg);
+    background: transparent;
+    transition:  0.3s ease-in-out;
 }
 
 .main-header .main-column .button-column .contact-button:hover {
-    background-image:
-      linear-gradient(var(--contact-bg), var(--contact-bg)),
-      linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background: var(--contact-bg);
     color: #000;
 }
 .hamburger {
@@ -1263,6 +1277,10 @@ body{
     color: var(--black-color);
     pointer-events: none;
     transition: all 0.3s ease;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
 }
 .contact-form input:focus + label,
 .contact-form input:not(:placeholder-shown) + label,
@@ -1306,6 +1324,11 @@ body{
     color: var(--black-color);
     pointer-events: none;
     transition: all 0.3s ease;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+
 }
 .form-group.active label {
     top: -10px;
@@ -1710,7 +1733,7 @@ body{
     color: #060805;
     border: none;
     font-family: var(--primary-font);
-    font-weight: 400;
+    font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -2%;
