@@ -77,7 +77,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-// hamburger menu js
+// Hamburger
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('menu');
 const buttonColumn = document.querySelector('.button-column');
@@ -97,15 +97,16 @@ overlay.addEventListener('click', () => {
     overlay.classList.remove('active');
 });
 
-// dropdown menu js (new add)
+// Dropdown Toggle for mobile (≤989px)
 document.querySelectorAll('.menu .dropdown > a').forEach(dropdownLink => {
     dropdownLink.addEventListener('click', (e) => {
-        if (window.innerWidth <= 992) { 
-            e.preventDefault(); 
-            dropdownLink.parentElement.classList.toggle('active'); 
+        if (window.innerWidth <= 989) {
+            e.preventDefault();
+            dropdownLink.parentElement.classList.toggle('active');
         }
     });
 });
+
 
 
 
