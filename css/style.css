@@ -189,7 +189,7 @@ body{
     color: var(--contact-bg);
 }
 .main-header .main-column .menu ul li a:hover::after {
-    width: 100%;
+    width: 100% !important;
 }
 .main-header .main-column .button-column .contact-button i{
    transform: rotate(-45deg);
