@@ -64,27 +64,6 @@
     letter-spacing: -2%;
     color: var(--text-color);
 }
-/* .common-button{
-    display: flex;
-    column-gap: 10px;
-    padding: 14px 24px;
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -2%;
-    color: rgba(255, 255, 255, 1);
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 50px;
-    outline: none;
-    border: 1px solid transparent;
-    background-image: linear-gradient(#2C3B23, #2C3B23), linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    background-origin: border-box;
-    background-clip: padding-box, border-box, border-box;
-    transition: all 0.3s ease-in-out;
-    width: fit-content;
-} */
 .common-button{
     display: flex;
     column-gap: 10px;
@@ -212,42 +191,11 @@ body{
 .main-header .main-column .menu ul li a:hover::after {
     width: 100%;
 }
-/* .main-header .main-column .button-column .contact-button {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-    padding: 14px 24px;
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -2%;
-    color: rgba(255, 255, 255, 1);
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 50px;
-    outline: none;
-    border: 1px solid transparent;
-    background-image: 
-    linear-gradient(#2C3B23, #2C3B23), linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    background-origin: border-box;
-    background-clip: padding-box, border-box, border-box;
-    transition: all 0.3s ease-in-out;
-} */
 .main-header .main-column .button-column .contact-button i{
    transform: rotate(-45deg);
    margin-bottom: 4px;
    font-size: 20px;
 }
-
-/* .main-header .main-column .button-column .contact-button:hover {
-    background-image:
-      linear-gradient(var(--contact-bg), var(--contact-bg)),
-      linear-gradient(90deg, #201CFF 0%, #B7E08A 80.05%),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    color: #000;
-} */
-
 .main-header .main-column .button-column .contact-button {
     display: flex;
     align-items: center;
@@ -301,6 +249,60 @@ body{
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
+
+/* Dropdown Base */
+.menu ul li.dropdown {
+    position: relative;
+}
+
+.menu ul li .dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: var(--primary-color);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 999;
+}
+.menu ul li .dropdown-menu{
+    display: block !important;
+}
+.menu ul li .dropdown-menu li {
+    padding: 8px 20px;
+}
+.menu ul li .dropdown-menu li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.menu ul li .dropdown-menu li a:hover {
+    color: #000;
+    border-radius: 4px;
+}
+/* Hover effect for desktop */
+.menu ul li.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* Mobile dropdown (when active class added) */
+.menu ul li.dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    position: static;
+    background: transparent;
+    padding-left: 15px;
+}
+
 /* =======================================================
     Home page css code here
 ===========================================================*/
