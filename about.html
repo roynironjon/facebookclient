@@ -13,30 +13,42 @@
   <body>
     <!-- Header -->
     <section class="main-header">
-      <div class="main-column">
-        <div class="logo-column">
-          <img src="assets/images/Logo.png" alt="Logo" class="logo" />
-        </div>
-        <div class="menu-column">
-          <nav class="menu">
-            <ul>
-              <li><a href="#">What We Do</a></li>
-              <li><a href="#">Our Work</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="button-column">
-            <button class="contact-button">
-                Let’s Talk
-                <img src="assets/images/arrow-up-right.png" alt="" srcset="" />
-            </button>
-        </div>
-      </div>
-    </section>
-    <!-- header section end -->
+        <div class="main-column">
+            <div class="logo-column">
+                <img src="assets/images/Logo.png" alt="Logo" class="logo" />
+            </div>
+            <!-- Hamburger for mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-column" id="menu">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">What We Do</a></li>
+                            <li><a href="#">Our Work</a></li>
+                            <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-button">
+                    Let’s Talk
+                     <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
 
+            <div class="button-column">
+                <button class="contact-button">
+                    Let’s Talk
+                   <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <!-- header section end -->
     <!-- inner hero section code here  -->
     <section class="inner-hero-section">
         <div class="inner-hero-container">
@@ -44,7 +56,7 @@
                 <h1 class="innaer-banner-heading">About us</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb breadcrumb-custom">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Home</a> </li>
                         <li class="breadcrumb-item"><a href="#">Services</a></li>
                         <li class="breadcrumb-item active">Website Maintenance & Updates</li>
                     </ol>
@@ -67,12 +79,10 @@
                     <p class="text">Optimized by Alex has one goal; to ensure that all your brand’s activities, from website design and creation to digital marketing and comprehensive online presence, are optimized. We understand the needs of businesses to attract and convert their website visitors into loyal customers.
                     </p>
                     <p class="text">With our extensive years of experience in website design, digital marketing, and SEO, we are well-informed on the practices to facilitate conversion through excellent website layout and design, content management, and search engine optimization.</p>
-                    <div class="button-column">
-                        <button class="common-button">
-                            Get A Consultation
-                            <img src="assets/images/arrow-up-right.png" alt="" srcset="" />
-                        </button>
-                    </div>
+                    <button class="common-button">
+                        Get A Consultation
+                            <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
             <!-- target sectopm -->
@@ -88,12 +98,11 @@
                             </p><br>
                             <p class="text">We have built successful relationships between our clients by creating a friendly and conducive environment where our clients can talk to us, tell us what they do, and their goals for their website. With this knowledge, we create a brand identity that invites and convinces their target customers of their worth. This works towards achieving our clients’ goals and objectives.</p>
                         </div>
-                        <div class="button-column">
-                            <button class="common-button">
-                                Get A Consultation
-                                <img src="assets/images/arrow-up-right.png" alt="" srcset="" />
-                            </button>
-                        </div>
+                        <button class="common-button">
+                            Get A Consultation
+                            <!-- <img src="assets/images/arrow-up-right.png" alt="" srcset="" /> -->
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -101,129 +110,125 @@
             <div class="update-main-column">
                 <div class="common-heading-content">
                     <h2 class="common-heading">Ongoing Analytical Updates</h2>
-                    <img src="assets/images/Union.png" alt="">
+                    <a class="desktop-show" href=""><img  src="assets/images/Union.png" alt=""></a>
                 </div>
                 <div class="content">
                     <p class="text">We also help our clients with their digital marketing services by creating powerful advertisements, targeting their desired customers, and managing their advertisement costs. We understand that digital marketing, when done well, can create a wealth of opportunities and profits for businesses.
                     </p>
                     <p class="text">At Optimized by Alex, we are a digital marketing company with dedicated website developers willing to go the extra mile to ensure that your projects are handled with utmost importance. We also promise to provide a 100% satisfaction in our services and a 24/7 website support for all our clients.</p>
+                    <a class="mobile-show" href=""><img  src="assets/images/Union.png" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
-
-
-
     <!-- about newsletter section -->
     <section class="newsletter-about-section">
         <div class="newsletter-container">
             <div class="content-column">
                 <h2 class="common-heading">Have a Project in Mind</h2>
-                <div class="button-column">
-                    <button class="common-nesletter-button">
-                       Let’s Talk
-                        <img src="assets/images/arrow-up-right.png" alt="" srcset="" />
-                    </button>
-                </div>
+                <button class="common-nesletter-button">
+                    Let’s Talk
+                    <!-- <img src="assets/images/arrow-up-right.png" alt="" srcset="" /> -->
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </div>
     </section>
 
-
-
     <!-- Footer -->
     <footer class="main-footer">
-      <div class="footer-container">
-        <div class="top-footer">
-          <div class="main-column">
-            <div class="footer-logo">
-                <div class="image">
-                    <img src="assets/images/Logo.png" alt="Footer Logo" />
-                </div>
-                <div class="content">
-                    <p>
-                    Brand your workflow and enhance team collaboration of mastery
-                    and joyful.
-                    </p>
-                </div>
-            </div>
-            <div class="common-column">
-              <div class="heading">
-                <h2>Services</h2>
-              </div>
-              <div class="content">
-                <ul>
-                  <li><a href="#">Search Engine Optimization</a></li>
-                  <li><a href="#">Pay Per Click</a></li>
-                  <li><a href="#">Website Maintenance & Updates</a></li>
-                  <li><a href="#">On-Site Optimization</a></li>
-                  <li><a href="#">Off-Site Optimization</a></li>
-                  <li><a href="#">Link Building Service</a></li>
-                  <li><a href="#">Content Creation</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="common-column">
-                <div class="heading">
-                    <h2>Site Links</h2>
-                </div>
-                <div class="content">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contract</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="common-column">
-                <div class="heading">
-                    <h2>Subscribe to Our Newsletter</h2>
-                </div>
-                <div class="content">
-                    <div class="newsletter-section">
-                        <div class="newsletter-form-container">
-                            <form action="#" class="newsletter-form">
-                                <input type="email" name="email" placeholder="Enter your email here" required class="email-input" />
-                                <button type="submit" class="subscribe-button">Subscribe</button>
-                            </form>
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="main-column">
+                    <div class="footer-logo">
+                        <div class="image">
+                            <img src="assets/images/Logo.png" alt="Footer Logo" />
+                        </div>
+                        <div class="content">
+                            <p>
+                                Brand your workflow and enhance team collaboration of mastery
+                                and joyful.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="common-column">
+                        <div class="heading">
+                            <h2>Services</h2>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="#">Search Engine Optimization</a></li>
+                                <li><a href="payper-click.html">Pay Per Click</a></li>
+                                <li><a href="webmn-update.html">Website Maintenance & Updates</a></li>
+                                <li><a href="#">On-Site Optimization</a></li>
+                                <li><a href="#">Off-Site Optimization</a></li>
+                                <li><a href="link-build.html">Link Building Service</a></li>
+                                <li><a href="Contact.html">Content Creation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="common-column">
+                        <div class="heading">
+                            <h2>Site Links</h2>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="Contact.html">Contract</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="common-column">
+                        <div class="heading">
+                            <h2>Subscribe to Our Newsletter</h2>
+                        </div>
+                        <div class="content">
+                            <div class="newsletter-section">
+                                <div class="newsletter-form-container">
+                                    <form action="#" class="newsletter-form">
+                                        <input type="email" name="email" placeholder="Enter your email here" required
+                                            class="email-input" />
+                                        <button type="submit" class="subscribe-button">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
-        </div>
-        <div class="divider">
+            <div class="divider">
 
+            </div>
+            <div class="socket">
+                <div class="scoket-common">
+                    <h2>Copyright by</h2>
+                    <ul>
+                        <li>© 2025 Brand. All rights Brand</li>
+                    </ul>
+                </div>
+                <div class="scoket-common">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><img src="assets/images/phone-incoming.png" alt="">360-818-4441</li>
+                    </ul>
+                </div>
+                <div class="scoket-common">
+                    <h2>Copyright by</h2>
+                    <ul>
+                        <li><img src="assets/images/mail.png" alt="">info@optimizedbyalex</li>
+                    </ul>
+                </div>
+                <div class="scoket-common">
+                    <ul class="social-link">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="socket">
-            <div class="scoket-common">
-                <h2>Copyright by</h2>
-                <ul>
-                    <li>© 2025 Brand. All rights Brand</li>
-                </ul>
-            </div>
-            <div class="scoket-common">
-                <h2>Contact Us</h2>
-                <ul>
-                    <li><img src="assets/images/phone-incoming.png" alt="">360-818-4441</li>
-                </ul>
-            </div>
-            <div class="scoket-common">
-                <h2>Copyright by</h2>
-                <ul>
-                    <li><img src="assets/images/mail.png" alt="">info@optimizedbyalex</li>
-                </ul>
-            </div>
-            <div class="scoket-common">
-                <ul class="social-link">
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-        </div>
-      </div>
     </footer>
 
     <!-- js code link -->

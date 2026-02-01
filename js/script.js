@@ -1,3 +1,4 @@
+// count up js code here
 document.addEventListener("DOMContentLoaded", () => {
 const statsSection = document.querySelector(".stats-wrapper");
 const stats = document.querySelectorAll(".number");
@@ -6,7 +7,6 @@ const options = {
     rootMargin: "0px",
     threshold: 0.5,
 };
-
 const observer = new IntersectionObserver((entries, observer) => {
 entries.forEach((entry) => {
 if (entry.isIntersecting) {
@@ -38,25 +38,20 @@ observer.observe(statsSection);
 }
 });
 
-
+// faq section js code here
 const faqItems = document.querySelectorAll('.faq-item');
-
 faqItems.forEach(item => {
   const btn = item.querySelector('.faq-question');
   const answer = item.querySelector('.faq-answer');
 
   btn.addEventListener('click', () => {
     const isActive = item.classList.contains('active');
-
-    // Close all others
     faqItems.forEach(other => {
       if (other !== item) {
         other.classList.remove('active');
         other.querySelector('.faq-answer').style.maxHeight = null;
       }
     });
-
-    // Toggle this one
     if (!isActive) {
       item.classList.add('active');
       answer.style.maxHeight = answer.scrollHeight + "px";
@@ -81,3 +76,53 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+// Hamburger
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+const buttonColumn = document.querySelector('.button-column');
+const overlay = document.getElementById('menu-overlay');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('active');
+    buttonColumn.classList.toggle('active');
+    overlay.classList.toggle('active');
+});
+
+overlay.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+    buttonColumn.classList.remove('active');
+    overlay.classList.remove('active');
+});
+
+// Dropdown Toggle for mobile (≤989px)
+document.querySelectorAll('.menu .dropdown > a').forEach(dropdownLink => {
+    dropdownLink.addEventListener('click', (e) => {
+        if (window.innerWidth <= 989) {
+            e.preventDefault();
+            dropdownLink.parentElement.classList.toggle('active');
+        }
+    });
+});
+
+
+
+
+// contact form input field js code here
+document.querySelectorAll('.form-group select').forEach(select => {
+    select.addEventListener('focus', () => {
+        select.parentElement.classList.add('active');
+    });
+
+    select.addEventListener('blur', () => {
+        if (!select.value) {
+            select.parentElement.classList.remove('active');
+        }
+    });
+    if (select.value) {
+        select.parentElement.classList.add('active');
+    }
+});
+

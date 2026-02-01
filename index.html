@@ -6,6 +6,7 @@
     <title>Home</title>
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <!-- Swiper CSS -->
@@ -14,31 +15,48 @@
   <body>
     <!-- Header -->
     <section class="main-header">
-      <div class="main-column">
-        <div class="logo-column">
-          <img src="assets/images/Logo.png" alt="Logo" class="logo" />
+        <div class="main-column">
+            <div class="logo-column">
+                <img src="assets/images/Logo.png" alt="Logo" class="logo" />
+            </div>
+            <!-- Hamburger for mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-column" id="menu">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Our Work</a></li>
+                        <li class="dropdown">
+                            <a href="#">About <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Our Mission</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-button">
+                    Let’s Talk
+                     <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="button-column">
+                <button class="contact-button">
+                    Let’s Talk
+                   <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
         </div>
-        <div class="menu-column">
-          <nav class="menu">
-            <ul>
-              <li><a href="#">What We Do</a></li>
-              <li><a href="#">Our Work</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="button-column">
-          <button class="contact-button">
-            Let’s Talk
-            <img src="assets/images/arrow-up-right.png" alt="" srcset="" />
-          </button>
-        </div>
-      </div>
     </section>
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
     <!-- header section end -->
-
-
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="main-column">
@@ -103,8 +121,15 @@
                 <section class="lumos-section">
                     <div class="top-column">
                         <div class="left-content">
-                            <h2 class="common-heading addimage">              WE MAKE YOUR DREEM BUSINESS MISSION & 
-                            VISIBLE <img class="img" src="assets/images/Vector-13.png" alt=""></h2>
+                            <h2 class="common-heading addimage">
+                                WE MAKE YOUR DREEM BUSINESS MISSION &amp; VISIBLE
+                                <span class="dec">
+                                    <span class="dec-line l1"></span>
+                                    <span class="dec-line l2"></span>
+                                    <span class="dec-line l3"></span>
+                                </span>
+                            </h2>
+
                         </div>
                         <div class="right-content">
                             <p class="description text">
@@ -121,7 +146,7 @@
                     </div>
                     <div class="stats-wrapper">
                         <div class="arrow-container">
-                            <img src="assets/images/Union.png" alt="">
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i> </a></a>
                         </div>
                         <div class="count-time">
                             <div class="stats-item">
@@ -205,42 +230,46 @@
                     <div class="features-grid">
                         <div class="feature-card">
                             <div class="icon-container">
-                                <img src="assets/images/why-1.png" alt="Rocket icon" class="feature-icon">
+                               <i class="fa-solid fa-rocket feature-icon"></i>
                             </div>
                             <div class="feature-content">
                                 <h3 class="feature-title sub-heading-text">Optimized for local SEO search</h3>
                                 <p class="feature-text text">OptimizedByAlex ensures your website isn't just another online presence but a powerful local</p>
-                                <a href="#" class="read-more-link">Read More <img src="assets/images/Union.png" alt=""></a>
+                               <a href="#" class="read-more-link">Read More 
+                               <i class="fa-solid fa-arrow-right"></i> </a>
                             </div>
                         </div>
                         <div class="feature-card">
                             <div class="icon-container">
-                                <img src="assets/images/Group 3.png" alt="Responsive design icon" class="feature-icon">
+                               <i class="fa-solid fa-desktop feature-icon"></i>
                             </div>
                             <div class="feature-content">
                                 <h3 class="feature-title sub-heading-text">Responsive websites</h3>
                                 <p class="feature-text text">At OptimizedByAlex, we prioritize responsiveness to ensure your website adapts seamlessly</p>
-                              <a href="#" class="read-more-link">Read More <img src="assets/images/Union.png" alt=""></a>
+                               <a href="#" class="read-more-link">Read More 
+                               <i class="fa-solid fa-arrow-right"></i> </a>
                             </div>
                         </div>
                         <div class="feature-card">
                             <div class="icon-container">
-                                <img src="assets/images/Group 4.png" alt="User icon" class="feature-icon">
+                               <i class="fa-regular fa-user feature-icon"></i>
                             </div>
                             <div class="feature-content">
                                 <h3 class="feature-title sub-heading-text">Positive user experience</h3>
                                 <p class="feature-text text">User experience is at the core of what we do. OptimizedByAlex crafts websites that prioritize</p>
-                               <a href="#" class="read-more-link">Read More <img src="assets/images/Union.png" alt=""></a>
+                               <a href="#" class="read-more-link">Read More 
+                               <i class="fa-solid fa-arrow-right"></i> </a>
                             </div>
                         </div>
                         <div class="feature-card">
                             <div class="icon-container">
-                                <img src="assets/images/why-4.png" alt="Palette icon" class="feature-icon">
+                               <i class="fa-solid fa-pen-nib feature-icon"></i>
                             </div>
                             <div class="feature-content">
                                 <h3 class="feature-title sub-heading-text">Stunning graphic designs</h3>
                                 <p class="feature-text text">At OptimizedByAlex, we believe visuals leave a lasting impression. Our team crafts stunning</p>
-                                <a href="#" class="read-more-link">Read More <img src="assets/images/Union.png" alt=""></a>
+                               <a href="#" class="read-more-link">Read More 
+                               <i class="fa-solid fa-arrow-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -383,7 +412,6 @@
     <div class="testimonial-container">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
                 <div class="swiper-slide">
                     <div class="testimonial-box">
                         <div class="main-testimonial">
@@ -411,7 +439,7 @@
                                 <img src="assets/images/testimonilaimages.png" class="avatar" />
                             </div>
                             <div class="content">
-                                <p class="message">
+                                <p class="message common-heading">
                                 Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
                                 </p>
                                 <div class="details">
@@ -431,7 +459,7 @@
                                 <img src="assets/images/testimonilaimages.png" class="avatar" />
                             </div>
                             <div class="content">
-                                <p class="message">
+                                <p class="message common-heading">
                                 Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
                                 </p>
                                 <div class="details">
@@ -451,7 +479,7 @@
                                 <img src="assets/images/testimonilaimages.png" class="avatar" />
                             </div>
                             <div class="content">
-                                <p class="message">
+                                <p class="message common-heading">
                                 Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
                                 </p>
                                 <div class="details">
@@ -471,7 +499,7 @@
                                 <img src="assets/images/testimonilaimages.png" class="avatar" />
                             </div>
                             <div class="content">
-                                <p class="message">
+                                <p class="message common-heading">
                                 Route agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!
                                 </p>
                                 <div class="details">
@@ -491,113 +519,101 @@
 
     <!-- Footer -->
     <footer class="main-footer">
-      <div class="footer-container">
-        <div class="top-footer">
-          <div class="main-column">
-            <div class="footer-logo">
-                <div class="image">
-                    <img src="assets/images/Logo.png" alt="Footer Logo" />
-                </div>
-                <div class="content">
-                    <p>
-                    Brand your workflow and enhance team collaboration of mastery
-                    and joyful.
-                    </p>
-                </div>
-            </div>
-            <div class="common-column">
-              <div class="heading">
-                <h2>Services</h2>
-              </div>
-              <div class="content">
-                <ul>
-                  <li><a href="#">Search Engine Optimization</a></li>
-                  <li><a href="#">Pay Per Click</a></li>
-                  <li><a href="#">Website Maintenance & Updates</a></li>
-                  <li><a href="#">On-Site Optimization</a></li>
-                  <li><a href="#">Off-Site Optimization</a></li>
-                  <li><a href="#">Link Building Service</a></li>
-                  <li><a href="#">Content Creation</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="common-column">
-                <div class="heading">
-                    <h2>Site Links</h2>
-                </div>
-                <div class="content">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contract</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="common-column">
-                <div class="heading">
-                    <h2>Subscribe to Our Newsletter</h2>
-                </div>
-                <div class="content">
-                    <div class="newsletter-section">
-                        <div class="newsletter-form-container">
-                            <form action="#" class="newsletter-form">
-                                <input type="email" name="email" placeholder="Enter your email here" required class="email-input" />
-                                <button type="submit" class="subscribe-button">Subscribe</button>
-                            </form>
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="main-column">
+                    <div class="footer-logo">
+                        <div class="image">
+                            <img src="assets/images/Logo.png" alt="Footer Logo" />
+                        </div>
+                        <div class="content">
+                            <p>
+                                Brand your workflow and enhance team collaboration of mastery
+                                and joyful.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="common-column">
+                        <div class="heading">
+                            <h2>Services</h2>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="#">Search Engine Optimization</a></li>
+                                <li><a href="payper-click.html">Pay Per Click</a></li>
+                                <li><a href="webmn-update.html">Website Maintenance & Updates</a></li>
+                                <li><a href="#">On-Site Optimization</a></li>
+                                <li><a href="#">Off-Site Optimization</a></li>
+                                <li><a href="link-build.html">Link Building Service</a></li>
+                                <li><a href="Contact.html">Content Creation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="common-column">
+                        <div class="heading">
+                            <h2>Site Links</h2>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="Contact.html">Contract</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="common-column">
+                        <div class="heading">
+                            <h2>Subscribe to Our Newsletter</h2>
+                        </div>
+                        <div class="content">
+                            <div class="newsletter-section">
+                                <div class="newsletter-form-container">
+                                    <form action="#" class="newsletter-form">
+                                        <input type="email" name="email" placeholder="Enter your email here" required
+                                            class="email-input" />
+                                        <button type="submit" class="subscribe-button">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
-        </div>
-        <div class="divider">
+            <div class="divider">
 
+            </div>
+            <div class="socket">
+                <div class="scoket-common">
+                    <h2>Copyright by</h2>
+                    <ul>
+                        <li>© 2025 Brand. All rights Brand</li>
+                    </ul>
+                </div>
+                <div class="scoket-common">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><img src="assets/images/phone-incoming.png" alt="">360-818-4441</li>
+                    </ul>
+                </div>
+                <div class="scoket-common">
+                    <h2>Copyright by</h2>
+                    <ul>
+                        <li><img src="assets/images/mail.png" alt="">info@optimizedbyalex</li>
+                    </ul>
+                </div>
+                <div class="scoket-common">
+                    <ul class="social-link">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="socket">
-            <div class="scoket-common">
-                <h2>Copyright by</h2>
-                <ul>
-                    <li>© 2025 Brand. All rights Brand</li>
-                </ul>
-            </div>
-            <div class="scoket-common">
-                <h2>Contact Us</h2>
-                <ul>
-                    <li><img src="assets/images/phone-incoming.png" alt="">360-818-4441</li>
-                </ul>
-            </div>
-            <div class="scoket-common">
-                <h2>Copyright by</h2>
-                <ul>
-                    <li><img src="assets/images/mail.png" alt="">info@optimizedbyalex</li>
-                </ul>
-            </div>
-            <div class="scoket-common">
-                <ul class="social-link">
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-        </div>
-      </div>
     </footer>
-
     <!-- js code link -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- Swiper JS -->
-
-    <script>
-        // testing Swiper
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            },
-        });
-    </script>
   </body>
 </html>
